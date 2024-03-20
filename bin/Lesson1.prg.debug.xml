@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="D:\School\Garmin\tutorials\Lesson1\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="1" lineNum="6" parent="globals/Lesson1Delegate" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="1" lineNum="15" parent="globals/Lesson1Delegate" pc="268435478" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="2" lineNum="50" parent="globals/Lesson1Delegate" pc="268435498" symbol="updateDurationValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="2" lineNum="51" parent="globals/Lesson1Delegate" pc="268435500" symbol="updateDurationValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="2" lineNum="52" parent="globals/Lesson1Delegate" pc="268435519" symbol="updateDurationValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="3" lineNum="35" parent="globals/Lesson1Delegate" pc="268435546" symbol="startRun"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="3" lineNum="42" parent="globals/Lesson1Delegate" pc="268435548" symbol="startRun"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="3" lineNum="43" parent="globals/Lesson1Delegate" pc="268435582" symbol="startRun"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="4" lineNum="17" parent="globals/Lesson1Delegate" pc="268435624" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="4" lineNum="18" parent="globals/Lesson1Delegate" pc="268435626" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="5" lineNum="21" parent="globals/Lesson1Delegate" pc="268435645" symbol="onSelect"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="5" lineNum="22" parent="globals/Lesson1Delegate" pc="268435647" symbol="onSelect"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="5" lineNum="23" parent="globals/Lesson1Delegate" pc="268435661" symbol="onSelect"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="5" lineNum="24" parent="globals/Lesson1Delegate" pc="268435671" symbol="onSelect"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="5" lineNum="27" parent="globals/Lesson1Delegate" pc="268435686" symbol="onSelect"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="5" lineNum="28" parent="globals/Lesson1Delegate" pc="268435696" symbol="onSelect"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="5" lineNum="31" parent="globals/Lesson1Delegate" pc="268435708" symbol="onSelect"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="6" lineNum="46" parent="globals/Lesson1Delegate" pc="268435711" symbol="pauseRun"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1Delegate.mc" id="6" lineNum="47" parent="globals/Lesson1Delegate" pc="268435713" symbol="pauseRun"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1App.mc" id="8" lineNum="32" parent="globals" pc="268435732" symbol="getApp"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1App.mc" id="8" lineNum="33" parent="globals" pc="268435742" symbol="getApp"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\bin\\gen\\006-B3589-00\\source\\Rez.mcgen" id="9" lineNum="7" parent="globals/Rez" pc="268435758" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1App.mc" id="10" lineNum="5" parent="globals/Lesson1App" pc="268435782" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1App.mc" id="11" lineNum="13" parent="globals/Lesson1App" pc="268435801" symbol="onStart"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1App.mc" id="12" lineNum="21" parent="globals/Lesson1App" pc="268435804" symbol="getInitialView"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1App.mc" id="12" lineNum="22" parent="globals/Lesson1App" pc="268435806" symbol="getInitialView"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1App.mc" id="12" lineNum="23" parent="globals/Lesson1App" pc="268435840" symbol="getInitialView"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1App.mc" id="13" lineNum="8" parent="globals/Lesson1App" pc="268435897" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1App.mc" id="13" lineNum="9" parent="globals/Lesson1App" pc="268435899" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1App.mc" id="14" lineNum="27" parent="globals/Lesson1App" pc="268435918" symbol="getView"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1App.mc" id="14" lineNum="28" parent="globals/Lesson1App" pc="268435920" symbol="getView"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1App.mc" id="15" lineNum="17" parent="globals/Lesson1App" pc="268435929" symbol="onStop"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="16" lineNum="5" parent="globals/Lesson1View" pc="268435932" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="18" lineNum="16" parent="globals/Lesson1View" pc="268435951" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="18" lineNum="17" parent="globals/Lesson1View" pc="268435953" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="18" lineNum="19" parent="globals/Lesson1View" pc="268435994" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="18" lineNum="20" parent="globals/Lesson1View" pc="268436024" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="18" lineNum="21" parent="globals/Lesson1View" pc="268436054" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="18" lineNum="22" parent="globals/Lesson1View" pc="268436084" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="18" lineNum="25" parent="globals/Lesson1View" pc="268436114" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="18" lineNum="26" parent="globals/Lesson1View" pc="268436147" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="18" lineNum="27" parent="globals/Lesson1View" pc="268436180" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="18" lineNum="28" parent="globals/Lesson1View" pc="268436234" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="19" lineNum="121" parent="globals/Lesson1View" pc="268436268" symbol="updateElapsedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="19" lineNum="122" parent="globals/Lesson1View" pc="268436272" symbol="updateElapsedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="19" lineNum="123" parent="globals/Lesson1View" pc="268436282" symbol="updateElapsedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="19" lineNum="124" parent="globals/Lesson1View" pc="268436292" symbol="updateElapsedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="19" lineNum="126" parent="globals/Lesson1View" pc="268436336" symbol="updateElapsedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="19" lineNum="128" parent="globals/Lesson1View" pc="268436358" symbol="updateElapsedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="19" lineNum="130" parent="globals/Lesson1View" pc="268436378" symbol="updateElapsedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="20" lineNum="94" parent="globals/Lesson1View" pc="268436395" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="20" lineNum="97" parent="globals/Lesson1View" pc="268436399" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="20" lineNum="95" parent="globals/Lesson1View" pc="268436399" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="20" lineNum="98" parent="globals/Lesson1View" pc="268436410" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="20" lineNum="101" parent="globals/Lesson1View" pc="268436420" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="20" lineNum="103" parent="globals/Lesson1View" pc="268436430" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="20" lineNum="104" parent="globals/Lesson1View" pc="268436441" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="20" lineNum="106" parent="globals/Lesson1View" pc="268436454" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="20" lineNum="107" parent="globals/Lesson1View" pc="268436465" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="20" lineNum="109" parent="globals/Lesson1View" pc="268436478" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="20" lineNum="110" parent="globals/Lesson1View" pc="268436488" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="20" lineNum="111" parent="globals/Lesson1View" pc="268436498" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="20" lineNum="113" parent="globals/Lesson1View" pc="268436542" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="20" lineNum="116" parent="globals/Lesson1View" pc="268436570" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="20" lineNum="118" parent="globals/Lesson1View" pc="268436590" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="21" lineNum="73" parent="globals/Lesson1View" pc="268436607" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="21" lineNum="76" parent="globals/Lesson1View" pc="268436611" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="21" lineNum="74" parent="globals/Lesson1View" pc="268436611" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="21" lineNum="78" parent="globals/Lesson1View" pc="268436622" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="21" lineNum="81" parent="globals/Lesson1View" pc="268436632" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="21" lineNum="82" parent="globals/Lesson1View" pc="268436642" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="21" lineNum="83" parent="globals/Lesson1View" pc="268436652" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="21" lineNum="84" parent="globals/Lesson1View" pc="268436662" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="21" lineNum="86" parent="globals/Lesson1View" pc="268436706" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="21" lineNum="89" parent="globals/Lesson1View" pc="268436728" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="21" lineNum="91" parent="globals/Lesson1View" pc="268436748" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="22" lineNum="11" parent="globals/Lesson1View" pc="268436765" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="22" lineNum="12" parent="globals/Lesson1View" pc="268436767" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="24" lineNum="49" parent="globals/Lesson1View" pc="268436786" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="24" lineNum="50" parent="globals/Lesson1View" pc="268436790" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="24" lineNum="52" parent="globals/Lesson1View" pc="268436790" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="24" lineNum="53" parent="globals/Lesson1View" pc="268436801" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="24" lineNum="54" parent="globals/Lesson1View" pc="268436808" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="24" lineNum="56" parent="globals/Lesson1View" pc="268436818" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="24" lineNum="58" parent="globals/Lesson1View" pc="268436829" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="24" lineNum="59" parent="globals/Lesson1View" pc="268436836" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="24" lineNum="61" parent="globals/Lesson1View" pc="268436846" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="24" lineNum="63" parent="globals/Lesson1View" pc="268436857" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="24" lineNum="64" parent="globals/Lesson1View" pc="268436864" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="24" lineNum="67" parent="globals/Lesson1View" pc="268436874" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="24" lineNum="68" parent="globals/Lesson1View" pc="268436894" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="24" lineNum="70" parent="globals/Lesson1View" pc="268436914" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="25" lineNum="38" parent="globals/Lesson1View" pc="268436931" symbol="onUpdate"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1View.mc" id="25" lineNum="40" parent="globals/Lesson1View" pc="268436933" symbol="onUpdate"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\managers\\DataManager.mc" id="26" lineNum="6" parent="globals/DataManager" pc="268436954" symbol="getSpeed"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\managers\\DataManager.mc" id="26" lineNum="9" parent="globals/DataManager" pc="268436956" symbol="getSpeed"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\managers\\DataManager.mc" id="27" lineNum="12" parent="globals/DataManager" pc="268436962" symbol="getWindSpeed"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\managers\\DataManager.mc" id="27" lineNum="14" parent="globals/DataManager" pc="268436964" symbol="getWindSpeed"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\managers\\DataManager.mc" id="29" lineNum="17" parent="globals/DataManager" pc="268436970" symbol="getElapsedTime"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\managers\\DataManager.mc" id="29" lineNum="18" parent="globals/DataManager" pc="268436972" symbol="getElapsedTime"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1App.mc" id="30" lineNum="37" parent="globals" pc="268436999" symbol="getView"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\source\\Lesson1App.mc" id="30" lineNum="38" parent="globals" pc="268437009" symbol="getView"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\bin\\gen\\006-B3589-00\\source\\Rez.mcgen" id="31" lineNum="19" parent="globals/Rez/Layouts" pc="268437034" symbol="MainLayout"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\bin\\gen\\006-B3589-00\\source\\Rez.mcgen" id="31" lineNum="20" parent="globals/Rez/Layouts" pc="268437046" symbol="MainLayout"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\bin\\gen\\006-B3589-00\\source\\Rez.mcgen" id="31" lineNum="22" parent="globals/Rez/Layouts" pc="268437158" symbol="MainLayout"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\bin\\gen\\006-B3589-00\\source\\Rez.mcgen" id="31" lineNum="24" parent="globals/Rez/Layouts" pc="268437270" symbol="MainLayout"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\bin\\gen\\006-B3589-00\\source\\Rez.mcgen" id="31" lineNum="26" parent="globals/Rez/Layouts" pc="268437382" symbol="MainLayout"/>
+        <entry filename="D:\\School\\Garmin\\tutorials\\Lesson1\\bin\\gen\\006-B3589-00\\source\\Rez.mcgen" id="31" lineNum="28" parent="globals/Rez/Layouts" pc="268437494" symbol="MainLayout"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8389346" symbol="text"/>
+        <entry id="31" method="true" symbol="updateElapsedValue"/>
+        <entry field="true" id="17" symbol="&lt;globals/Lesson1Delegate/&lt;&gt;_currentWind&gt;"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="8" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="39" method="true" symbol="MainLayout"/>
+        <entry id="14" object="true" symbol="WindType"/>
+        <entry field="true" id="20" symbol="&lt;globals/Lesson1Delegate/&lt;&gt;_view&gt;"/>
+        <entry id="35" method="true" symbol="getElapsedTime"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="28" symbol="&lt;globals/Lesson1View/&lt;&gt;_currentPaceElement&gt;"/>
+        <entry field="true" id="40" symbol="AppName"/>
+        <entry id="9" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry field="true" id="15" symbol="&lt;globals/Lesson1Delegate/&lt;&gt;_currentDuration&gt;"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="3" module="true" symbol="globals/Rez"/>
+        <entry id="2" module="true" symbol="globals/DataManager/&lt;statics&gt;"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="10" object="true" symbol="DataManager"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="25" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="12" object="true" symbol="Lesson1Delegate"/>
+        <entry id="7" module="true" symbol="globals/Rez/Layouts"/>
+        <entry field="true" id="16" symbol="&lt;globals/Lesson1Delegate/&lt;&gt;_currentSpeed&gt;"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="32" method="true" symbol="updateSpeedValue"/>
+        <entry field="true" id="30" symbol="&lt;globals/Lesson1View/&lt;&gt;_windTitleElement&gt;"/>
+        <entry id="6" module="true" symbol="globals/Rez/JsonData"/>
+        <entry id="4" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="21" method="true" symbol="pauseRun"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="36" method="true" symbol="getSpeed"/>
+        <entry id="22" method="true" symbol="startRun"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry field="true" id="27" symbol="&lt;globals/Lesson1View/&lt;&gt;_currentDurationElement&gt;"/>
+        <entry field="true" id="38" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="18" symbol="&lt;globals/Lesson1Delegate/&lt;&gt;_inProgress&gt;"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="11" object="true" symbol="Lesson1App"/>
+        <entry id="33" method="true" symbol="updateWindCorrectedValue"/>
+        <entry id="34" method="true" symbol="updateWindDirectionValue"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="37" method="true" symbol="getWindSpeed"/>
+        <entry id="13" object="true" symbol="Lesson1View"/>
+        <entry field="true" id="29" symbol="&lt;globals/Lesson1View/&lt;&gt;_windCorrectedElement&gt;"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="24" module="true" symbol="Layouts"/>
+        <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8391945" method="true" symbol="getView"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="26" symbol="&lt;globals/Lesson1App/&lt;&gt;_view&gt;"/>
+        <entry id="23" method="true" symbol="updateDurationValue"/>
+        <entry field="true" id="19" symbol="&lt;globals/Lesson1Delegate/&lt;&gt;_timer&gt;"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268436267" name="dc" stackId="1" startPc="268435951"/>
+        <entry arg="true" endPc="268436394" name="elapsed" stackId="1" startPc="268436268"/>
+        <entry endPc="268436393" name="minutes" stackId="2" startPc="268436272"/>
+        <entry endPc="268436393" name="seconds" stackId="3" startPc="268436272"/>
+        <entry endPc="268436393" name="secondsFormatted" stackId="4" startPc="268436272"/>
+        <entry endPc="268436393" name="formattedValue" stackId="5" startPc="268436272"/>
+        <entry arg="true" endPc="268436606" name="runSpeed" stackId="1" startPc="268436395"/>
+        <entry arg="true" endPc="268436606" name="windSpeed" stackId="2" startPc="268436395"/>
+        <entry endPc="268436605" name="formattedValue" stackId="3" startPc="268436399"/>
+        <entry endPc="268436569" name="pace" stackId="4" startPc="268436420"/>
+        <entry endPc="268436569" name="minutes" stackId="5" startPc="268436420"/>
+        <entry endPc="268436569" name="seconds" stackId="6" startPc="268436420"/>
+        <entry endPc="268436569" name="secondsFormatted" stackId="7" startPc="268436420"/>
+        <entry arg="true" endPc="268436764" name="speed" stackId="1" startPc="268436607"/>
+        <entry endPc="268436763" name="formattedValue" stackId="2" startPc="268436611"/>
+        <entry endPc="268436727" name="pace" stackId="3" startPc="268436632"/>
+        <entry endPc="268436727" name="minutes" stackId="4" startPc="268436632"/>
+        <entry endPc="268436727" name="seconds" stackId="5" startPc="268436632"/>
+        <entry endPc="268436727" name="secondsFormatted" stackId="6" startPc="268436632"/>
+        <entry arg="true" endPc="268436930" name="windSpeed" stackId="1" startPc="268436786"/>
+        <entry endPc="268436929" name="label" stackId="2" startPc="268436790"/>
+        <entry endPc="268436929" name="color" stackId="3" startPc="268436790"/>
+        <entry arg="true" endPc="268436953" name="dc" stackId="1" startPc="268436931"/>
+        <entry arg="true" endPc="268437540" name="dc" stackId="1" startPc="268437034"/>
+        <entry endPc="268437540" name="rez_cmp_local_text_wind_title" stackId="2" startPc="268437046"/>
+        <entry endPc="268437540" name="rez_cmp_local_text_current_pace" stackId="3" startPc="268437046"/>
+        <entry endPc="268437540" name="rez_cmp_local_text_wind_corrected_pace" stackId="4" startPc="268437046"/>
+        <entry endPc="268437540" name="rez_cmp_local_text_elapsed_time" stackId="5" startPc="268437046"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="95" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Lesson1Delegate" offset="198" parentId="globals" symbolId="Lesson1Delegate" type="class"/>
+        <dataEntry label="globals/WindType" offset="325" parentId="globals" symbolId="WindType" type="class"/>
+        <dataEntry label="globals/Rez" offset="372" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Lesson1App" offset="451" parentId="globals" symbolId="Lesson1App" type="class"/>
+        <dataEntry label="globals/Lesson1View" offset="538" parentId="globals" symbolId="Lesson1View" type="class"/>
+        <dataEntry label="globals/DataManager" offset="681" parentId="globals" symbolId="DataManager" type="class"/>
+        <dataEntry label="globals/DataManager/&lt;statics&gt;" offset="728" parentId="DataManager" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="783" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="822" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="861" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="892" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="923" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="962" parentId="Rez" symbolId="JsonData" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435497" name="&lt;init&gt;" parent="Lesson1Delegate" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435545" name="updateDurationValue" parent="Lesson1Delegate" startPc="268435498">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435623" name="startRun" parent="Lesson1Delegate" startPc="268435546">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435644" name="initialize" parent="Lesson1Delegate" startPc="268435624">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435710" name="onSelect" parent="Lesson1Delegate" startPc="268435645">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435731" name="pauseRun" parent="Lesson1Delegate" startPc="268435711">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="WindType">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="WindType">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435757" name="getApp" startPc="268435732">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435781" name="&lt;init&gt;" parent="Rez" startPc="268435758">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435800" name="&lt;init&gt;" parent="Lesson1App" startPc="268435782">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435803" name="onStart" parent="Lesson1App" startPc="268435801">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435896" name="getInitialView" parent="Lesson1App" startPc="268435804">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435917" name="initialize" parent="Lesson1App" startPc="268435897">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435928" name="getView" parent="Lesson1App" startPc="268435918">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435931" name="onStop" parent="Lesson1App" startPc="268435929">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435950" name="&lt;init&gt;" parent="Lesson1View" startPc="268435932">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="Lesson1View">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436267" name="onLayout" parent="Lesson1View" startPc="268435951">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436394" name="updateElapsedValue" parent="Lesson1View" startPc="268436268">
+            <param id="elapsed"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436606" name="updateWindCorrectedValue" parent="Lesson1View" startPc="268436395">
+            <param id="runSpeed"/>
+            <param id="windSpeed"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436764" name="updateSpeedValue" parent="Lesson1View" startPc="268436607">
+            <param id="speed"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436785" name="initialize" parent="Lesson1View" startPc="268436765">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="Lesson1View">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436930" name="updateWindDirectionValue" parent="Lesson1View" startPc="268436786">
+            <param id="windSpeed"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436953" name="onUpdate" parent="Lesson1View" startPc="268436931">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="DataManager">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/DataManager">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436961" name="getSpeed" parent="DataManager" startPc="268436954">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436969" name="getWindSpeed" parent="DataManager" startPc="268436962">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="DataManager">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436998" name="getElapsedTime" parent="DataManager" startPc="268436970">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437033" name="getView" startPc="268436999">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437540" name="MainLayout" parent="Layouts" startPc="268437034">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

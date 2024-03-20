@@ -1,0 +1,21 @@
+[ @file = "D:\School\Garmin\tutorials\Lesson1\source\enums\WaterType.mc"; @line = 1; ]
+class WaterType{
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\enums\WaterType.mc"; @line = 1; ]
+    <init> {
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\enums\WaterType.mc"; @line = 1; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\enums\WaterType.mc"; @line = 2; ]
+    static
+    enum {
+        [ @file = "D:\School\Garmin\tutorials\Lesson1\source\enums\WaterType.mc"; @line = 3; @position = 8; ]
+        Cold,
+        [ @file = "D:\School\Garmin\tutorials\Lesson1\source\enums\WaterType.mc"; @line = 4; @position = 8; ]
+        Hot
+    }
+}
+[ @file = "D:\School\Garmin\tutorials\Lesson1\source\enums\WaterType.mc"; @line = 1; ]
+<init> {
+}

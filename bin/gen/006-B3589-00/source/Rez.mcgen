@@ -1,0 +1,38 @@
+import Toybox.Lang;
+using Toybox.WatchUi;
+using Toybox.WatchUi as Ui;
+using Toybox.Graphics;
+using Toybox.Graphics as Gfx;
+
+module Rez {
+    module Drawables {
+        (:initialized) var LauncherIcon as Symbol;
+    } // Drawables
+
+    module Fonts {
+    } // Fonts
+
+    module JsonData {
+    } // JsonData
+
+    module Layouts {
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_text_wind_title = new WatchUi.Text({:identifier=>"wind_title", :locX=>(240 * 0.5), :locY=>(240 * (12.5 / 100.0)), :text=>"No wind", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_MEDIUM});
+
+            var rez_cmp_local_text_current_pace = new WatchUi.Text({:identifier=>"current_pace", :locX=>(240 * 0.5), :locY=>(240 * (27.5 / 100.0)), :text=>"0:00", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_NUMBER_THAI_HOT});
+
+            var rez_cmp_local_text_wind_corrected_pace = new WatchUi.Text({:identifier=>"wind_corrected_pace", :locX=>(240 * 0.5), :locY=>(240 * (72.5 / 100.0)), :text=>"0:00", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
+
+            var rez_cmp_local_text_elapsed_time = new WatchUi.Text({:identifier=>"elapsed_time", :locX=>(240 * 0.5), :locY=>(240 * (87.5 / 100.0)), :text=>"0:00", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
+
+            return [rez_cmp_local_text_wind_title, rez_cmp_local_text_current_pace, rez_cmp_local_text_wind_corrected_pace, rez_cmp_local_text_elapsed_time] as Array<WatchUi.Drawable>;
+        }
+    } // Layouts
+
+    module Menus {
+    } // Menus
+
+    module Strings {
+        (:initialized) var AppName as Symbol;
+    } // Strings
+} // Rez

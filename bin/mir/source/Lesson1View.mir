@@ -1,0 +1,479 @@
+[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 5; ]
+class Lesson1View extends WatchUi.View{
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 6; @position = 16; ]
+    private
+    var _windTitleElement;
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 7; @position = 16; ]
+    private
+    var _currentPaceElement;
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 8; @position = 16; ]
+    private
+    var _windCorrectedElement;
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 9; @position = 16; ]
+    private
+    var _currentDurationElement;
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 11; ]
+    function initialize() as Void {
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_11_26_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 12 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_11_26_stop:
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 16; ]
+    function onLayout(dc as Dc) as Void {
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_16_40_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 17 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :MainLayout;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 19 8 ]
+        %tmp.11 = getv ? :View;
+        %tmp.12 = getv function %tmp.11 :findDrawableById;
+        %tmp.13 = "wind_title";
+        %tmp.14 = invoke %tmp.11 %tmp.12(%tmp.13);
+        putv self :_windTitleElement %tmp.14;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 20 8 ]
+        %tmp.16 = getv ? :View;
+        %tmp.17 = getv function %tmp.16 :findDrawableById;
+        %tmp.18 = "current_pace";
+        %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
+        putv self :_currentPaceElement %tmp.19;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 21 8 ]
+        %tmp.21 = getv ? :View;
+        %tmp.22 = getv function %tmp.21 :findDrawableById;
+        %tmp.23 = "wind_corrected_pace";
+        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+        putv self :_windCorrectedElement %tmp.24;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 22 8 ]
+        %tmp.26 = getv ? :View;
+        %tmp.27 = getv function %tmp.26 :findDrawableById;
+        %tmp.28 = "elapsed_time";
+        %tmp.29 = invoke %tmp.26 %tmp.27(%tmp.28);
+        putv self :_currentDurationElement %tmp.29;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 25 8 ]
+        %tmp.30 = self;
+        %tmp.31 = getv function %tmp.30 :updateWindDirectionValue;
+        %tmp.33 = getv ? :DataManager;
+        %tmp.34 = getv function %tmp.33 :getWindSpeed;
+        %tmp.35 = invoke %tmp.33 %tmp.34();
+        invoke %tmp.30 %tmp.31(%tmp.35);
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 26 8 ]
+        %tmp.36 = self;
+        %tmp.37 = getv function %tmp.36 :updateSpeedValue;
+        %tmp.39 = getv ? :DataManager;
+        %tmp.40 = getv function %tmp.39 :getSpeed;
+        %tmp.41 = invoke %tmp.39 %tmp.40();
+        invoke %tmp.36 %tmp.37(%tmp.41);
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 27 8 ]
+        %tmp.42 = self;
+        %tmp.43 = getv function %tmp.42 :updateWindCorrectedValue;
+        %tmp.45 = getv ? :DataManager;
+        %tmp.46 = getv function %tmp.45 :getSpeed;
+        %tmp.47 = invoke %tmp.45 %tmp.46();
+        %tmp.49 = getv ? :DataManager;
+        %tmp.50 = getv function %tmp.49 :getWindSpeed;
+        %tmp.51 = invoke %tmp.49 %tmp.50();
+        invoke %tmp.42 %tmp.43(%tmp.47, %tmp.51);
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 28 8 ]
+        %tmp.52 = self;
+        %tmp.53 = getv function %tmp.52 :updateElapsedValue;
+        %tmp.55 = getv ? :DataManager;
+        %tmp.56 = getv function %tmp.55 :getElapsedTime;
+        %tmp.57 = invoke %tmp.55 %tmp.56();
+        invoke %tmp.52 %tmp.53(%tmp.57);
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_16_40_stop:
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 34; ]
+    function onShow() as Void {
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 38; ]
+    function onUpdate(dc as Dc) as Void {
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_38_40_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 40 8 ]
+        %tmp.2 = getv ? :View;
+        %tmp.3 = getv function %tmp.2 :onUpdate;
+        %tmp.5 = lgetv %dc;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_38_40_stop:
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 46; ]
+    function onHide() as Void {
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 49; ]
+    function updateWindDirectionValue(windSpeed as Number) as Void {
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_49_67_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 50 8 ]
+        [ "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_49_67_start" "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_49_67_stop" ]
+        %label.1 = local;
+        [ "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_49_67_start" "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_49_67_stop" ]
+        %color.2 = local;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 52 8 ]
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_52_8_if_stmt:
+        %tmp.2 = lgetv %windSpeed;
+        %tmp.3 = 0;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_52_8_if_false;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_52_8_if_true:
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_52_28_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 53 12 ]
+        %tmp.5 = "No Wind";
+        lputv %label.1 %tmp.5;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 54 12 ]
+        %tmp.6 = getm $.Toybox.Graphics;
+        %tmp.7 = getv %tmp.6 :COLOR_BLUE;
+        lputv %color.2 %tmp.7;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_52_28_stop:
+        goto @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_52_8_if_end;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_52_8_if_false:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 56 13 ]
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_56_13_if_stmt:
+        %tmp.9 = lgetv %windSpeed;
+        %tmp.10 = 0;
+        %tmp.11 = gt %tmp.9 %tmp.10;
+        bf %tmp.11 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_56_13_if_false;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_56_13_if_true:
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_57_8_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 58 12 ]
+        %tmp.12 = "Head Wind";
+        lputv %label.1 %tmp.12;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 59 12 ]
+        %tmp.13 = getm $.Toybox.Graphics;
+        %tmp.14 = getv %tmp.13 :COLOR_RED;
+        lputv %color.2 %tmp.14;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_57_8_stop:
+        goto @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_56_13_if_end;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_56_13_if_false:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 61 13 ]
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_61_13_if_stmt:
+        %tmp.16 = lgetv %windSpeed;
+        %tmp.17 = 0;
+        %tmp.18 = lt %tmp.16 %tmp.17;
+        bf %tmp.18 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_61_13_if_end;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_61_13_if_true:
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_62_8_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 63 12 ]
+        %tmp.19 = "Tail Wind";
+        lputv %label.1 %tmp.19;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 64 12 ]
+        %tmp.20 = getm $.Toybox.Graphics;
+        %tmp.21 = getv %tmp.20 :COLOR_GREEN;
+        lputv %color.2 %tmp.21;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_62_8_stop:
+        goto @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_61_13_if_end;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_61_13_if_end:
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_56_13_if_end:
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_52_8_if_end:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 67 8 ]
+        %tmp.23 = getv ? :_windTitleElement;
+        %tmp.24 = getv function %tmp.23 :setText;
+        %tmp.26 = lgetv %label.1;
+        invoke %tmp.23 %tmp.24(%tmp.26);
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 68 8 ]
+        %tmp.28 = getv ? :_windTitleElement;
+        %tmp.29 = getv function %tmp.28 :setColor;
+        %tmp.31 = lgetv %color.2;
+        invoke %tmp.28 %tmp.29(%tmp.31);
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 70 8 ]
+        %tmp.32 = getm $.Toybox.WatchUi;
+        %tmp.33 = getv function %tmp.32 :requestUpdate;
+        invoke %tmp.32 %tmp.33();
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_49_67_stop:
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 73; ]
+    function updateSpeedValue(speed as Number) as Void {
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_73_55_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 74 8 ]
+        [ "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_73_55_start" "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_73_55_stop" ]
+        %formattedValue.1 = local;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 76 8 ]
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_76_8_if_stmt:
+        %tmp.2 = lgetv %speed;
+        %tmp.3 = 0;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_76_8_if_false;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_76_8_if_true:
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_77_8_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 78 12 ]
+        %tmp.5 = "--:--";
+        lputv %formattedValue.1 %tmp.5;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_77_8_stop:
+        goto @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_76_8_if_end;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_76_8_if_false:
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_80_13_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 81 12 ]
+        [ "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_80_13_start" "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_80_13_stop" ]
+        %pace.2 = local;
+        %tmp.6 = 1000;
+        %tmp.8 = lgetv %speed;
+        %tmp.9 = div %tmp.6 %tmp.8;
+        lputv %pace.2 %tmp.9;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 82 12 ]
+        [ "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_80_13_start" "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_80_13_stop" ]
+        %minutes.3 = local;
+        %tmp.11 = lgetv %pace.2;
+        %tmp.12 = 60;
+        %tmp.13 = div %tmp.11 %tmp.12;
+        lputv %minutes.3 %tmp.13;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 83 12 ]
+        [ "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_80_13_start" "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_80_13_stop" ]
+        %seconds.4 = local;
+        %tmp.15 = lgetv %pace.2;
+        %tmp.16 = 60;
+        %tmp.17 = mod %tmp.15 %tmp.16;
+        lputv %seconds.4 %tmp.17;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 84 12 ]
+        [ "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_80_13_start" "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_80_13_stop" ]
+        %secondsFormatted.5 = local;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_84_35_begin:
+        %tmp.19 = lgetv %seconds.4;
+        %tmp.20 = 9;
+        %tmp.21 = gt %tmp.19 %tmp.20;
+        bf %tmp.21 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_84_35_false;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_84_35_true:
+        %tmp.22 = lgetv %seconds.4;
+        %tmp.23 = getv function %tmp.22 :toString;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        push %tmp.24;
+        goto @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_84_35_end;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_84_35_false:
+        %tmp.25 = "0";
+        %tmp.26 = lgetv %seconds.4;
+        %tmp.27 = getv function %tmp.26 :toString;
+        %tmp.28 = invoke %tmp.26 %tmp.27();
+        %tmp.29 = add %tmp.25 %tmp.28;
+        push %tmp.29;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_84_35_end:
+        %tmp.30 = phi [%tmp.21 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_84_35_begin] [%tmp.24 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_84_35_true] [%tmp.29 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_84_35_false] [%tmp.30 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_84_35_end];
+        lputv %secondsFormatted.5 %tmp.30;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 86 12 ]
+        %tmp.31 = lgetv %minutes.3;
+        %tmp.32 = getv function %tmp.31 :toString;
+        %tmp.33 = invoke %tmp.31 %tmp.32();
+        %tmp.34 = ":";
+        %tmp.35 = add %tmp.33 %tmp.34;
+        %tmp.37 = lgetv %secondsFormatted.5;
+        %tmp.38 = add %tmp.35 %tmp.37;
+        lputv %formattedValue.1 %tmp.38;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_80_13_stop:
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_76_8_if_end:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 89 8 ]
+        %tmp.40 = getv ? :_currentPaceElement;
+        %tmp.41 = getv function %tmp.40 :setText;
+        %tmp.43 = lgetv %formattedValue.1;
+        invoke %tmp.40 %tmp.41(%tmp.43);
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 91 8 ]
+        %tmp.44 = getm $.Toybox.WatchUi;
+        %tmp.45 = getv function %tmp.44 :requestUpdate;
+        invoke %tmp.44 %tmp.45();
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_73_55_stop:
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 94; ]
+    function updateWindCorrectedValue(runSpeed as Number, windSpeed as Number) as Void {
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_94_87_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 95 8 ]
+        [ "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_94_87_start" "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_94_87_stop" ]
+        %formattedValue.1 = local;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 97 8 ]
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_97_8_if_stmt:
+        %tmp.2 = lgetv %runSpeed;
+        %tmp.3 = 0;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_97_8_if_false;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_97_8_if_true:
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_97_27_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 98 12 ]
+        %tmp.5 = "--:-- WCP";
+        lputv %formattedValue.1 %tmp.5;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_97_27_stop:
+        goto @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_97_8_if_end;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_97_8_if_false:
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_100_13_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 101 12 ]
+        [ "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_100_13_start" "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_100_13_stop" ]
+        %pace.2 = local;
+        %tmp.6 = 1000;
+        %tmp.8 = lgetv %runSpeed;
+        %tmp.9 = div %tmp.6 %tmp.8;
+        lputv %pace.2 %tmp.9;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 103 12 ]
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_103_12_if_stmt:
+        %tmp.11 = lgetv %windSpeed;
+        %tmp.12 = 0;
+        %tmp.13 = gt %tmp.11 %tmp.12;
+        bf %tmp.13 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_103_12_if_false;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_103_12_if_true:
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_103_31_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 104 16 ]
+        %tmp.14 = lgetv %pace.2;
+        %tmp.15 = 12;
+        %tmp.16 = sub %tmp.14 %tmp.15;
+        lputv %pace.2 %tmp.16;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_103_31_stop:
+        goto @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_103_12_if_end;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_103_12_if_false:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 106 17 ]
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_106_17_if_stmt:
+        %tmp.18 = lgetv %windSpeed;
+        %tmp.19 = 0;
+        %tmp.20 = lt %tmp.18 %tmp.19;
+        bf %tmp.20 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_106_17_if_end;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_106_17_if_true:
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_106_36_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 107 16 ]
+        %tmp.21 = lgetv %pace.2;
+        %tmp.22 = 6;
+        %tmp.23 = add %tmp.21 %tmp.22;
+        lputv %pace.2 %tmp.23;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_106_36_stop:
+        goto @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_106_17_if_end;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_106_17_if_end:
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_103_12_if_end:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 109 12 ]
+        [ "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_100_13_start" "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_100_13_stop" ]
+        %minutes.3 = local;
+        %tmp.25 = lgetv %pace.2;
+        %tmp.26 = 60;
+        %tmp.27 = div %tmp.25 %tmp.26;
+        lputv %minutes.3 %tmp.27;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 110 12 ]
+        [ "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_100_13_start" "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_100_13_stop" ]
+        %seconds.4 = local;
+        %tmp.29 = lgetv %pace.2;
+        %tmp.30 = 60;
+        %tmp.31 = mod %tmp.29 %tmp.30;
+        lputv %seconds.4 %tmp.31;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 111 12 ]
+        [ "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_100_13_start" "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_100_13_stop" ]
+        %secondsFormatted.5 = local;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_111_35_begin:
+        %tmp.33 = lgetv %seconds.4;
+        %tmp.34 = 9;
+        %tmp.35 = gt %tmp.33 %tmp.34;
+        bf %tmp.35 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_111_35_false;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_111_35_true:
+        %tmp.36 = lgetv %seconds.4;
+        %tmp.37 = getv function %tmp.36 :toString;
+        %tmp.38 = invoke %tmp.36 %tmp.37();
+        push %tmp.38;
+        goto @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_111_35_end;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_111_35_false:
+        %tmp.39 = "0";
+        %tmp.40 = lgetv %seconds.4;
+        %tmp.41 = getv function %tmp.40 :toString;
+        %tmp.42 = invoke %tmp.40 %tmp.41();
+        %tmp.43 = add %tmp.39 %tmp.42;
+        push %tmp.43;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_111_35_end:
+        %tmp.44 = phi [%tmp.35 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_111_35_begin] [%tmp.38 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_111_35_true] [%tmp.43 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_111_35_false] [%tmp.44 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_111_35_end];
+        lputv %secondsFormatted.5 %tmp.44;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 113 12 ]
+        %tmp.45 = lgetv %minutes.3;
+        %tmp.46 = getv function %tmp.45 :toString;
+        %tmp.47 = invoke %tmp.45 %tmp.46();
+        %tmp.48 = ":";
+        %tmp.49 = add %tmp.47 %tmp.48;
+        %tmp.51 = lgetv %secondsFormatted.5;
+        %tmp.52 = add %tmp.49 %tmp.51;
+        %tmp.53 = " WCP";
+        %tmp.54 = add %tmp.52 %tmp.53;
+        lputv %formattedValue.1 %tmp.54;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_100_13_stop:
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_97_8_if_end:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 116 8 ]
+        %tmp.56 = getv ? :_windCorrectedElement;
+        %tmp.57 = getv function %tmp.56 :setText;
+        %tmp.59 = lgetv %formattedValue.1;
+        invoke %tmp.56 %tmp.57(%tmp.59);
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 118 8 ]
+        %tmp.60 = getm $.Toybox.WatchUi;
+        %tmp.61 = getv function %tmp.60 :requestUpdate;
+        invoke %tmp.60 %tmp.61();
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_94_87_stop:
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 121; ]
+    function updateElapsedValue(elapsed as Number) {
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_121_51_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 122 8 ]
+        [ "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_121_51_start" "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_121_51_stop" ]
+        %minutes.1 = local;
+        %tmp.2 = lgetv %elapsed;
+        %tmp.3 = 60;
+        %tmp.4 = div %tmp.2 %tmp.3;
+        lputv %minutes.1 %tmp.4;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 123 8 ]
+        [ "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_121_51_start" "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_121_51_stop" ]
+        %seconds.2 = local;
+        %tmp.6 = lgetv %elapsed;
+        %tmp.7 = 60;
+        %tmp.8 = mod %tmp.6 %tmp.7;
+        lputv %seconds.2 %tmp.8;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 124 8 ]
+        [ "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_121_51_start" "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_121_51_stop" ]
+        %secondsFormatted.3 = local;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_124_31_begin:
+        %tmp.10 = lgetv %seconds.2;
+        %tmp.11 = 9;
+        %tmp.12 = gt %tmp.10 %tmp.11;
+        bf %tmp.12 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_124_31_false;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_124_31_true:
+        %tmp.13 = lgetv %seconds.2;
+        %tmp.14 = getv function %tmp.13 :toString;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        push %tmp.15;
+        goto @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_124_31_end;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_124_31_false:
+        %tmp.16 = "0";
+        %tmp.17 = lgetv %seconds.2;
+        %tmp.18 = getv function %tmp.17 :toString;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = add %tmp.16 %tmp.19;
+        push %tmp.20;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_124_31_end:
+        %tmp.21 = phi [%tmp.12 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_124_31_begin] [%tmp.15 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_124_31_true] [%tmp.20 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_124_31_false] [%tmp.21 @D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_124_31_end];
+        lputv %secondsFormatted.3 %tmp.21;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 126 8 ]
+        [ "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_121_51_start" "D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_121_51_stop" ]
+        %formattedValue.4 = local;
+        %tmp.22 = lgetv %minutes.1;
+        %tmp.23 = getv function %tmp.22 :toString;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        %tmp.25 = ":";
+        %tmp.26 = add %tmp.24 %tmp.25;
+        %tmp.28 = lgetv %secondsFormatted.3;
+        %tmp.29 = add %tmp.26 %tmp.28;
+        lputv %formattedValue.4 %tmp.29;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 128 8 ]
+        %tmp.31 = getv ? :_currentDurationElement;
+        %tmp.32 = getv function %tmp.31 :setText;
+        %tmp.34 = lgetv %formattedValue.4;
+        invoke %tmp.31 %tmp.32(%tmp.34);
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc" 130 8 ]
+        %tmp.35 = getm $.Toybox.WatchUi;
+        %tmp.36 = getv function %tmp.35 :requestUpdate;
+        invoke %tmp.35 %tmp.36();
+D_School_Garmin_tutorials_Lesson1_source_Lesson1View_mc_121_51_stop:
+    }
+}
+[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1View.mc"; @line = 1; ]
+<init> {
+}

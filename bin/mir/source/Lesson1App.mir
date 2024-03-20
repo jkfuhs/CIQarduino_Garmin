@@ -1,0 +1,87 @@
+[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc"; @line = 5; ]
+class Lesson1App extends Application.AppBase{
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc"; @line = 6; @position = 16; ]
+    private
+    var _view;
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc"; @line = 8; ]
+    function initialize() as Void {
+D_School_Garmin_tutorials_Lesson1_source_Lesson1App_mc_8_26_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc" 9 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D_School_Garmin_tutorials_Lesson1_source_Lesson1App_mc_8_26_stop:
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc"; @line = 13; ]
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc"; @line = 17; ]
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc"; @line = 21; ]
+    function getInitialView() as Array<Views or InputDelegates> or Null {
+D_School_Garmin_tutorials_Lesson1_source_Lesson1App_mc_21_65_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc" 22 8 ]
+        %tmp.4 = getv ? :Lesson1View;
+        %tmp.1 = newc %tmp.4 ();
+        putv self :_view %tmp.1;
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc" 23 8 ]
+        %tmp.5 = newa Array<Views or InputDelegates> 2;
+        %tmp.7 = getv ? :_view;
+        %tmp.8 = dup %tmp.5;
+        %tmp.9 = aputv %tmp.8 0 %tmp.7;
+        %tmp.13 = getv ? :Lesson1Delegate;
+        %tmp.10 = newc %tmp.13 ();
+        %tmp.14 = dup %tmp.9;
+        %tmp.15 = aputv %tmp.14 1 %tmp.10;
+        ret %tmp.15;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1App_mc_21_65_stop:
+    }
+    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc"; @line = 27; ]
+    function getView() as Void {
+D_School_Garmin_tutorials_Lesson1_source_Lesson1App_mc_27_31_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc" 28 8 ]
+        %tmp.2 = getv ? :_view;
+        ret %tmp.2;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1App_mc_27_31_stop:
+    }
+}
+[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc"; @line = 32; ]
+function getApp() as Lesson1App {
+D_School_Garmin_tutorials_Lesson1_source_Lesson1App_mc_32_32_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc" 33 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 Lesson1App;
+    ret %tmp.4;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1App_mc_32_32_stop:
+}
+[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc"; @line = 37; ]
+function getView() as Lesson1View {
+D_School_Garmin_tutorials_Lesson1_source_Lesson1App_mc_37_34_start:
+[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc" 38 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = getv function %tmp.3 :getView;
+    %tmp.5 = invoke %tmp.3 %tmp.4();
+    ret %tmp.5;
+D_School_Garmin_tutorials_Lesson1_source_Lesson1App_mc_37_34_stop:
+}
+[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1App.mc"; @line = 1; ]
+<init> {
+}
