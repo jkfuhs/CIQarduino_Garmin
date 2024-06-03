@@ -1,7 +1,7 @@
 <layout id="MainLayout">
     <label
         id="wind_title"
-        text="No wind"
+        text="No Sensor"
         x="center"
         y="12.5%"
         font="Gfx.FONT_MEDIUM"

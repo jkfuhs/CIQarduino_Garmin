@@ -1,5 +1,5 @@
 <properties>
-    <property id="currentSpeed" type="number">10</property>
+    <property id="currentSpeed" type="number">20</property>
     <property id="windSpeed" type="number">5</property>
-    <property id="elapsedTime" type="number">20</property>
+    <property id="elapsedTime" type="number">0</property>
 </properties>

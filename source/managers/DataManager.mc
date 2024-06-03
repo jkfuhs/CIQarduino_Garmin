@@ -3,21 +3,24 @@ import Toybox.Lang;
 import Toybox.Activity;
 
 class DataManager {
-    static function getSpeed() {
-        // return Toybox.Activity.getActivityInfo().currentSpeed;
+    private var windSpeed = 8;
+
+    public function getSpeed() {
+        return Toybox.Activity.getActivityInfo().currentSpeed;
         // return Application.Properties.getValue("currentSpeed");
-        return 10;
+        // return 15.724;
     }
 
-    static function getWindSpeed() {
-        // return Application.Properties.getValue("windSpeed");
-        return 6;
-    }
+    // public function getWindSpeed() {
+    //     // return Application.Properties.getValue("windSpeed");
+    //     return windSpeed;
+    // }
 
-    static function getElapsedTime() {
+    // public function setWindSpeed(newWindSpeed) {
+    //     windSpeed = newWindSpeed;
+    // }
+
+    public function getElapsedTime() {
         return Application.Properties.getValue("elapsedTime");
     }
-
-    // static function setCycleDuration(duration as Number) {
-    //     Application.Properties.setValue("cycleDuration", duration);
 }

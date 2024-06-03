@@ -1,9 +1,12 @@
 import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
+using Toybox.BluetoothLowEnergy as Ble;
 
 class Lesson1App extends Application.AppBase {
     private var _view;
+    private var profileManager;
+    private var queue;
 
     function initialize() {
         AppBase.initialize();
@@ -19,8 +22,11 @@ class Lesson1App extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as Array<Views or InputDelegates>? {
-        _view = new Lesson1View();
-        return [ _view, new Lesson1Delegate() ] as Array<Views or InputDelegates>;
+        profileManager = new WindSensorProfile();
+        _view = new ArduinoView(profileManager);
+        Ble.setDelegate(new ArduinoBLEDelegate(profileManager, _view));
+        profileManager.registerProfiles();
+        return [ _view, new ArduinoDelegate() ] as Array<Views or InputDelegates>;
     }
 
     // Returns main view instance
@@ -34,6 +40,6 @@ function getApp() as Lesson1App {
 }
 
 // Returns main view instance
-function getView() as Lesson1View {
+function getView() as ArduinoView {
     return Application.getApp().getView();
 }
