@@ -1,23 +1,23 @@
-[ @file = "D:\School\Garmin\tutorials\Lesson1\source\enums\WindType.mc"; @line = 1; ]
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\enums\WindType.mc"; @line = 1; ]
 class WindType{
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\enums\WindType.mc"; @line = 1; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\enums\WindType.mc"; @line = 1; ]
     <init> {
     }
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\enums\WindType.mc"; @line = 1; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\enums\WindType.mc"; @line = 1; ]
     static
     <init> {
     }
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\enums\WindType.mc"; @line = 2; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\enums\WindType.mc"; @line = 2; ]
     static
     enum {
-        [ @file = "D:\School\Garmin\tutorials\Lesson1\source\enums\WindType.mc"; @line = 3; @position = 8; ]
+        [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\enums\WindType.mc"; @line = 3; @position = 8; ]
         NoWind,
-        [ @file = "D:\School\Garmin\tutorials\Lesson1\source\enums\WindType.mc"; @line = 4; @position = 8; ]
+        [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\enums\WindType.mc"; @line = 4; @position = 8; ]
         HeadWind,
-        [ @file = "D:\School\Garmin\tutorials\Lesson1\source\enums\WindType.mc"; @line = 5; @position = 8; ]
+        [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\enums\WindType.mc"; @line = 5; @position = 8; ]
         TailWind
     }
 }
-[ @file = "D:\School\Garmin\tutorials\Lesson1\source\enums\WindType.mc"; @line = 1; ]
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\enums\WindType.mc"; @line = 1; ]
 <init> {
 }

@@ -17,7 +17,7 @@ module Rez {
 
     module Layouts {
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_wind_title = new WatchUi.Text({:identifier=>"wind_title", :locX=>(240 * 0.5), :locY=>(240 * (12.5 / 100.0)), :text=>"No wind", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_MEDIUM});
+            var rez_cmp_local_text_wind_title = new WatchUi.Text({:identifier=>"wind_title", :locX=>(240 * 0.5), :locY=>(240 * (12.5 / 100.0)), :text=>"No Sensor", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_MEDIUM});
 
             var rez_cmp_local_text_current_pace = new WatchUi.Text({:identifier=>"current_pace", :locX=>(240 * 0.5), :locY=>(240 * (27.5 / 100.0)), :text=>"0:00", :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_NUMBER_THAI_HOT});
 

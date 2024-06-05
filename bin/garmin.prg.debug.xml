@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="D:\School\Garmin\ble\CIQarduino\garmin\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\WindSensorProfile.mc" id="2" lineNum="13" parent="globals/WindSensorProfile" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\WindSensorProfile.mc" id="2" lineNum="5" parent="globals/WindSensorProfile" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\WindSensorProfile.mc" id="2" lineNum="7" parent="globals/WindSensorProfile" pc="268435477" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\WindSensorProfile.mc" id="2" lineNum="8" parent="globals/WindSensorProfile" pc="268435494" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\WindSensorProfile.mc" id="2" lineNum="18" parent="globals/WindSensorProfile" pc="268435511" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\WindSensorProfile.mc" id="2" lineNum="19" parent="globals/WindSensorProfile" pc="268435539" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\WindSensorProfile.mc" id="2" lineNum="31" parent="globals/WindSensorProfile" pc="268435567" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\WindSensorProfile.mc" id="3" lineNum="21" parent="globals/WindSensorProfile" pc="268435679" symbol="isConnected"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\WindSensorProfile.mc" id="3" lineNum="23" parent="globals/WindSensorProfile" pc="268435681" symbol="isConnected"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\WindSensorProfile.mc" id="4" lineNum="42" parent="globals/WindSensorProfile" pc="268435690" symbol="registerProfiles"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\WindSensorProfile.mc" id="4" lineNum="43" parent="globals/WindSensorProfile" pc="268435692" symbol="registerProfiles"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\WindSensorProfile.mc" id="5" lineNum="26" parent="globals/WindSensorProfile" pc="268435717" symbol="getWindSpeed"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\WindSensorProfile.mc" id="5" lineNum="28" parent="globals/WindSensorProfile" pc="268435719" symbol="getWindSpeed"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="7" lineNum="38" parent="globals" pc="268435728" symbol="getApp"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="7" lineNum="39" parent="globals" pc="268435738" symbol="getApp"/>
+        <entry filename="d:\\School\\Garmin\\ble\\CIQarduino\\garmin\\bin\\gen\\006-B3589-00\\source\\Rez.mcgen" id="8" lineNum="7" parent="globals/Rez" pc="268435754" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="9" lineNum="6" parent="globals/Lesson1App" pc="268435778" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="10" lineNum="16" parent="globals/Lesson1App" pc="268435797" symbol="onStart"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="11" lineNum="24" parent="globals/Lesson1App" pc="268435800" symbol="getInitialView"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="11" lineNum="25" parent="globals/Lesson1App" pc="268435802" symbol="getInitialView"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="11" lineNum="26" parent="globals/Lesson1App" pc="268435836" symbol="getInitialView"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="11" lineNum="27" parent="globals/Lesson1App" pc="268435878" symbol="getInitialView"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="11" lineNum="28" parent="globals/Lesson1App" pc="268435936" symbol="getInitialView"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="11" lineNum="29" parent="globals/Lesson1App" pc="268435954" symbol="getInitialView"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="12" lineNum="11" parent="globals/Lesson1App" pc="268436011" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="12" lineNum="12" parent="globals/Lesson1App" pc="268436013" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="13" lineNum="33" parent="globals/Lesson1App" pc="268436032" symbol="getView"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="13" lineNum="34" parent="globals/Lesson1App" pc="268436034" symbol="getView"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="14" lineNum="20" parent="globals/Lesson1App" pc="268436043" symbol="onStop"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="15" lineNum="7" parent="globals/ArduinoBLEDelegate" pc="268436046" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="16" lineNum="47" parent="globals/ArduinoBLEDelegate" pc="268436065" symbol="onCharacteristicRead"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="16" lineNum="49" parent="globals/ArduinoBLEDelegate" pc="268436067" symbol="onCharacteristicRead"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="17" lineNum="76" parent="globals/ArduinoBLEDelegate" pc="268436092" symbol="&lt;globals/ArduinoBLEDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="17" lineNum="77" parent="globals/ArduinoBLEDelegate" pc="268436096" symbol="&lt;globals/ArduinoBLEDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="17" lineNum="78" parent="globals/ArduinoBLEDelegate" pc="268436116" symbol="&lt;globals/ArduinoBLEDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="17" lineNum="79" parent="globals/ArduinoBLEDelegate" pc="268436140" symbol="&lt;globals/ArduinoBLEDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="17" lineNum="80" parent="globals/ArduinoBLEDelegate" pc="268436156" symbol="&lt;globals/ArduinoBLEDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="17" lineNum="83" parent="globals/ArduinoBLEDelegate" pc="268436178" symbol="&lt;globals/ArduinoBLEDelegate/&lt;&gt;contains&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="18" lineNum="20" parent="globals/ArduinoBLEDelegate" pc="268436181" symbol="onConnectedStateChanged"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="18" lineNum="21" parent="globals/ArduinoBLEDelegate" pc="268436183" symbol="onConnectedStateChanged"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="18" lineNum="22" parent="globals/ArduinoBLEDelegate" pc="268436199" symbol="onConnectedStateChanged"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="18" lineNum="23" parent="globals/ArduinoBLEDelegate" pc="268436210" symbol="onConnectedStateChanged"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="18" lineNum="24" parent="globals/ArduinoBLEDelegate" pc="268436226" symbol="onConnectedStateChanged"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="18" lineNum="26" parent="globals/ArduinoBLEDelegate" pc="268436247" symbol="onConnectedStateChanged"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="18" lineNum="28" parent="globals/ArduinoBLEDelegate" pc="268436267" symbol="onConnectedStateChanged"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="19" lineNum="12" parent="globals/ArduinoBLEDelegate" pc="268436284" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="19" lineNum="13" parent="globals/ArduinoBLEDelegate" pc="268436286" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="19" lineNum="14" parent="globals/ArduinoBLEDelegate" pc="268436307" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="19" lineNum="15" parent="globals/ArduinoBLEDelegate" pc="268436325" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="19" lineNum="16" parent="globals/ArduinoBLEDelegate" pc="268436335" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="20" lineNum="31" parent="globals/ArduinoBLEDelegate" pc="268436346" symbol="onScanResults"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="20" lineNum="32" parent="globals/ArduinoBLEDelegate" pc="268436350" symbol="onScanResults"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="20" lineNum="33" parent="globals/ArduinoBLEDelegate" pc="268436371" symbol="onScanResults"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="20" lineNum="35" parent="globals/ArduinoBLEDelegate" pc="268436391" symbol="onScanResults"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="20" lineNum="37" parent="globals/ArduinoBLEDelegate" pc="268436430" symbol="onScanResults"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="20" lineNum="38" parent="globals/ArduinoBLEDelegate" pc="268436451" symbol="onScanResults"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="20" lineNum="39" parent="globals/ArduinoBLEDelegate" pc="268436467" symbol="onScanResults"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="20" lineNum="40" parent="globals/ArduinoBLEDelegate" pc="268436498" symbol="onScanResults"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="20" lineNum="41" parent="globals/ArduinoBLEDelegate" pc="268436514" symbol="onScanResults"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoBleDelegate.mc" id="20" lineNum="42" parent="globals/ArduinoBLEDelegate" pc="268436530" symbol="onScanResults"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\managers\\DataManager.mc" id="21" lineNum="8" parent="globals/DataManager" pc="268436566" symbol="getSpeed"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\managers\\DataManager.mc" id="21" lineNum="9" parent="globals/DataManager" pc="268436568" symbol="getSpeed"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\managers\\DataManager.mc" id="23" lineNum="23" parent="globals/DataManager" pc="268436590" symbol="getElapsedTime"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\managers\\DataManager.mc" id="23" lineNum="24" parent="globals/DataManager" pc="268436592" symbol="getElapsedTime"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="24" lineNum="7" parent="globals/ArduinoDelegate" pc="268436619" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="24" lineNum="16" parent="globals/ArduinoDelegate" pc="268436637" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="25" lineNum="76" parent="globals/ArduinoDelegate" pc="268436657" symbol="updateDurationValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="25" lineNum="77" parent="globals/ArduinoDelegate" pc="268436659" symbol="updateDurationValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="25" lineNum="78" parent="globals/ArduinoDelegate" pc="268436678" symbol="updateDurationValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="26" lineNum="28" parent="globals/ArduinoDelegate" pc="268436705" symbol="onSelect"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="26" lineNum="29" parent="globals/ArduinoDelegate" pc="268436707" symbol="onSelect"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="26" lineNum="30" parent="globals/ArduinoDelegate" pc="268436721" symbol="onSelect"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="26" lineNum="31" parent="globals/ArduinoDelegate" pc="268436731" symbol="onSelect"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="26" lineNum="34" parent="globals/ArduinoDelegate" pc="268436746" symbol="onSelect"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="26" lineNum="35" parent="globals/ArduinoDelegate" pc="268436756" symbol="onSelect"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="26" lineNum="38" parent="globals/ArduinoDelegate" pc="268436768" symbol="onSelect"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="27" lineNum="46" parent="globals/ArduinoDelegate" pc="268436771" symbol="onBack"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="27" lineNum="48" parent="globals/ArduinoDelegate" pc="268436773" symbol="onBack"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="27" lineNum="49" parent="globals/ArduinoDelegate" pc="268436784" symbol="onBack"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="27" lineNum="51" parent="globals/ArduinoDelegate" pc="268436805" symbol="onBack"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="27" lineNum="52" parent="globals/ArduinoDelegate" pc="268436823" symbol="onBack"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="28" lineNum="65" parent="globals/ArduinoDelegate" pc="268436836" symbol="startRun"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="28" lineNum="66" parent="globals/ArduinoDelegate" pc="268436838" symbol="startRun"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="28" lineNum="67" parent="globals/ArduinoDelegate" pc="268436872" symbol="startRun"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="28" lineNum="68" parent="globals/ArduinoDelegate" pc="268436913" symbol="startRun"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="29" lineNum="19" parent="globals/ArduinoDelegate" pc="268436932" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="29" lineNum="20" parent="globals/ArduinoDelegate" pc="268436934" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="29" lineNum="21" parent="globals/ArduinoDelegate" pc="268436952" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="29" lineNum="25" parent="globals/ArduinoDelegate" pc="268437009" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="31" lineNum="56" parent="globals/ArduinoDelegate" pc="268437031" symbol="onNextPage"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="31" lineNum="58" parent="globals/ArduinoDelegate" pc="268437033" symbol="onNextPage"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="31" lineNum="59" parent="globals/ArduinoDelegate" pc="268437045" symbol="onNextPage"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="31" lineNum="60" parent="globals/ArduinoDelegate" pc="268437063" symbol="onNextPage"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="32" lineNum="71" parent="globals/ArduinoDelegate" pc="268437079" symbol="pauseRun"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="32" lineNum="72" parent="globals/ArduinoDelegate" pc="268437081" symbol="pauseRun"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoDelegate.mc" id="32" lineNum="73" parent="globals/ArduinoDelegate" pc="268437099" symbol="pauseRun"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="33" lineNum="43" parent="globals" pc="268437118" symbol="getView"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\Lesson1App.mc" id="33" lineNum="44" parent="globals" pc="268437128" symbol="getView"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="34" lineNum="8" parent="globals/ArduinoView" pc="268437153" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="35" lineNum="202" parent="globals/ArduinoView" pc="268437172" symbol="updateElapsedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="35" lineNum="203" parent="globals/ArduinoView" pc="268437176" symbol="updateElapsedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="35" lineNum="204" parent="globals/ArduinoView" pc="268437186" symbol="updateElapsedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="35" lineNum="205" parent="globals/ArduinoView" pc="268437196" symbol="updateElapsedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="35" lineNum="207" parent="globals/ArduinoView" pc="268437240" symbol="updateElapsedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="35" lineNum="209" parent="globals/ArduinoView" pc="268437262" symbol="updateElapsedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="35" lineNum="211" parent="globals/ArduinoView" pc="268437282" symbol="updateElapsedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="170" parent="globals/ArduinoView" pc="268437299" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="171" parent="globals/ArduinoView" pc="268437303" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="173" parent="globals/ArduinoView" pc="268437303" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="175" parent="globals/ArduinoView" pc="268437310" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="177" parent="globals/ArduinoView" pc="268437320" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="178" parent="globals/ArduinoView" pc="268437331" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="183" parent="globals/ArduinoView" pc="268437341" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="184" parent="globals/ArduinoView" pc="268437352" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="186" parent="globals/ArduinoView" pc="268437365" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="187" parent="globals/ArduinoView" pc="268437376" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="189" parent="globals/ArduinoView" pc="268437389" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="190" parent="globals/ArduinoView" pc="268437399" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="191" parent="globals/ArduinoView" pc="268437418" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="192" parent="globals/ArduinoView" pc="268437437" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="194" parent="globals/ArduinoView" pc="268437481" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="197" parent="globals/ArduinoView" pc="268437509" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="36" lineNum="199" parent="globals/ArduinoView" pc="268437529" symbol="updateWindCorrectedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="221" parent="globals/ArduinoView" pc="268437546" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="222" parent="globals/ArduinoView" pc="268437548" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="223" parent="globals/ArduinoView" pc="268437569" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="224" parent="globals/ArduinoView" pc="268437580" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="226" parent="globals/ArduinoView" pc="268437604" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="227" parent="globals/ArduinoView" pc="268437614" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="228" parent="globals/ArduinoView" pc="268437624" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="229" parent="globals/ArduinoView" pc="268437634" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="231" parent="globals/ArduinoView" pc="268437644" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="232" parent="globals/ArduinoView" pc="268437657" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="234" parent="globals/ArduinoView" pc="268437684" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="235" parent="globals/ArduinoView" pc="268437693" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="237" parent="globals/ArduinoView" pc="268437706" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="238" parent="globals/ArduinoView" pc="268437715" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="240" parent="globals/ArduinoView" pc="268437728" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="241" parent="globals/ArduinoView" pc="268437738" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="243" parent="globals/ArduinoView" pc="268437759" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="244" parent="globals/ArduinoView" pc="268437764" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="37" lineNum="246" parent="globals/ArduinoView" pc="268437780" symbol="resetConnection"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="40" lineNum="43" parent="globals/ArduinoView" pc="268437797" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="40" lineNum="44" parent="globals/ArduinoView" pc="268437801" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="40" lineNum="46" parent="globals/ArduinoView" pc="268437842" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="40" lineNum="47" parent="globals/ArduinoView" pc="268437872" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="40" lineNum="48" parent="globals/ArduinoView" pc="268437902" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="40" lineNum="49" parent="globals/ArduinoView" pc="268437932" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="40" lineNum="51" parent="globals/ArduinoView" pc="268437962" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="40" lineNum="52" parent="globals/ArduinoView" pc="268437985" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="40" lineNum="53" parent="globals/ArduinoView" pc="268438007" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="40" lineNum="54" parent="globals/ArduinoView" pc="268438021" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="40" lineNum="55" parent="globals/ArduinoView" pc="268438043" symbol="onLayout"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="41" lineNum="214" parent="globals/ArduinoView" pc="268438077" symbol="setService"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="41" lineNum="215" parent="globals/ArduinoView" pc="268438079" symbol="setService"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="41" lineNum="217" parent="globals/ArduinoView" pc="268438092" symbol="setService"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="42" lineNum="141" parent="globals/ArduinoView" pc="268438135" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="42" lineNum="144" parent="globals/ArduinoView" pc="268438139" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="42" lineNum="142" parent="globals/ArduinoView" pc="268438139" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="42" lineNum="146" parent="globals/ArduinoView" pc="268438146" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="42" lineNum="148" parent="globals/ArduinoView" pc="268438156" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="42" lineNum="150" parent="globals/ArduinoView" pc="268438167" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="42" lineNum="153" parent="globals/ArduinoView" pc="268438177" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="42" lineNum="155" parent="globals/ArduinoView" pc="268438187" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="42" lineNum="157" parent="globals/ArduinoView" pc="268438206" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="42" lineNum="160" parent="globals/ArduinoView" pc="268438225" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="42" lineNum="162" parent="globals/ArduinoView" pc="268438269" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="42" lineNum="165" parent="globals/ArduinoView" pc="268438291" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="42" lineNum="167" parent="globals/ArduinoView" pc="268438311" symbol="updateSpeedValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="43" lineNum="90" parent="globals/ArduinoView" pc="268438328" symbol="handleCRead"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="43" lineNum="92" parent="globals/ArduinoView" pc="268438330" symbol="handleCRead"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="43" lineNum="93" parent="globals/ArduinoView" pc="268438354" symbol="handleCRead"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="43" lineNum="95" parent="globals/ArduinoView" pc="268438365" symbol="handleCRead"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="43" lineNum="97" parent="globals/ArduinoView" pc="268438389" symbol="handleCRead"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="43" lineNum="98" parent="globals/ArduinoView" pc="268438438" symbol="handleCRead"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="43" lineNum="99" parent="globals/ArduinoView" pc="268438459" symbol="handleCRead"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="43" lineNum="101" parent="globals/ArduinoView" pc="268438483" symbol="handleCRead"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="44" lineNum="30" parent="globals/ArduinoView" pc="268438494" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="44" lineNum="31" parent="globals/ArduinoView" pc="268438496" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="44" lineNum="32" parent="globals/ArduinoView" pc="268438514" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="44" lineNum="35" parent="globals/ArduinoView" pc="268438524" symbol="initialize"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="110" parent="globals/ArduinoView" pc="268438539" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="111" parent="globals/ArduinoView" pc="268438543" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="113" parent="globals/ArduinoView" pc="268438543" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="115" parent="globals/ArduinoView" pc="268438586" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="117" parent="globals/ArduinoView" pc="268438597" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="118" parent="globals/ArduinoView" pc="268438604" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="120" parent="globals/ArduinoView" pc="268438614" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="121" parent="globals/ArduinoView" pc="268438637" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="122" parent="globals/ArduinoView" pc="268438644" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="124" parent="globals/ArduinoView" pc="268438654" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="126" parent="globals/ArduinoView" pc="268438665" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="127" parent="globals/ArduinoView" pc="268438672" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="129" parent="globals/ArduinoView" pc="268438682" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="131" parent="globals/ArduinoView" pc="268438693" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="132" parent="globals/ArduinoView" pc="268438700" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="135" parent="globals/ArduinoView" pc="268438710" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="136" parent="globals/ArduinoView" pc="268438730" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="45" lineNum="138" parent="globals/ArduinoView" pc="268438750" symbol="updateWindDirectionValue"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="46" lineNum="65" parent="globals/ArduinoView" pc="268438767" symbol="onUpdate"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="46" lineNum="67" parent="globals/ArduinoView" pc="268438771" symbol="onUpdate"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="46" lineNum="68" parent="globals/ArduinoView" pc="268438802" symbol="onUpdate"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="46" lineNum="71" parent="globals/ArduinoView" pc="268438819" symbol="onUpdate"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="46" lineNum="73" parent="globals/ArduinoView" pc="268438847" symbol="onUpdate"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="46" lineNum="76" parent="globals/ArduinoView" pc="268438897" symbol="onUpdate"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="46" lineNum="77" parent="globals/ArduinoView" pc="268438918" symbol="onUpdate"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="46" lineNum="79" parent="globals/ArduinoView" pc="268438930" symbol="onUpdate"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="46" lineNum="82" parent="globals/ArduinoView" pc="268438943" symbol="onUpdate"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="46" lineNum="83" parent="globals/ArduinoView" pc="268438966" symbol="onUpdate"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="46" lineNum="84" parent="globals/ArduinoView" pc="268438988" symbol="onUpdate"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="46" lineNum="85" parent="globals/ArduinoView" pc="268439002" symbol="onUpdate"/>
+        <entry filename="D:\\School\\Garmin\\ble\\CIQarduino\\garmin\\source\\ArduinoView.mc" id="46" lineNum="87" parent="globals/ArduinoView" pc="268439024" symbol="onUpdate"/>
+        <entry filename="d:\\School\\Garmin\\ble\\CIQarduino\\garmin\\bin\\gen\\006-B3589-00\\source\\Rez.mcgen" id="47" lineNum="19" parent="globals/Rez/Layouts" pc="268439045" symbol="MainLayout"/>
+        <entry filename="d:\\School\\Garmin\\ble\\CIQarduino\\garmin\\bin\\gen\\006-B3589-00\\source\\Rez.mcgen" id="47" lineNum="20" parent="globals/Rez/Layouts" pc="268439057" symbol="MainLayout"/>
+        <entry filename="d:\\School\\Garmin\\ble\\CIQarduino\\garmin\\bin\\gen\\006-B3589-00\\source\\Rez.mcgen" id="47" lineNum="22" parent="globals/Rez/Layouts" pc="268439169" symbol="MainLayout"/>
+        <entry filename="d:\\School\\Garmin\\ble\\CIQarduino\\garmin\\bin\\gen\\006-B3589-00\\source\\Rez.mcgen" id="47" lineNum="24" parent="globals/Rez/Layouts" pc="268439281" symbol="MainLayout"/>
+        <entry filename="d:\\School\\Garmin\\ble\\CIQarduino\\garmin\\bin\\gen\\006-B3589-00\\source\\Rez.mcgen" id="47" lineNum="26" parent="globals/Rez/Layouts" pc="268439393" symbol="MainLayout"/>
+        <entry filename="d:\\School\\Garmin\\ble\\CIQarduino\\garmin\\bin\\gen\\006-B3589-00\\source\\Rez.mcgen" id="47" lineNum="28" parent="globals/Rez/Layouts" pc="268439505" symbol="MainLayout"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="62" symbol="gotWindData"/>
+        <entry field="true" id="42" symbol="&lt;globals/ArduinoDelegate/&lt;&gt;_currentSpeed&gt;"/>
+        <entry id="8389346" symbol="text"/>
+        <entry field="true" id="41" symbol="&lt;globals/ArduinoDelegate/&lt;&gt;_currentDuration&gt;"/>
+        <entry id="70" method="true" symbol="updateElapsedValue"/>
+        <entry id="9" object="true" symbol="ArduinoBLEDelegate"/>
+        <entry field="true" id="23" symbol="&lt;globals/WindSensorProfile/&lt;&gt;_windSpeed&gt;"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="7" module="true" symbol="globals/Rez/Menus"/>
+        <entry field="true" id="36" symbol="queue"/>
+        <entry id="75" method="true" symbol="MainLayout"/>
+        <entry field="true" id="54" symbol="&lt;globals/ArduinoView/&lt;&gt;_windTitleElement&gt;"/>
+        <entry field="true" id="69" symbol="timer"/>
+        <entry field="true" id="43" symbol="&lt;globals/ArduinoDelegate/&lt;&gt;_currentWind&gt;"/>
+        <entry field="true" id="8388890" symbol="sport"/>
+        <entry field="true" id="20" symbol="&lt;globals/WindSensorProfile/&lt;&gt;_isConnected&gt;"/>
+        <entry id="15" object="true" symbol="WindType"/>
+        <entry id="8391342" symbol="endianness"/>
+        <entry id="38" method="true" symbol="getElapsedTime"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="28" symbol="uuid2"/>
+        <entry field="true" id="27" symbol="uuid1"/>
+        <entry field="true" id="60" symbol="deviceName"/>
+        <entry id="8391256" method="true" symbol="onScanResults"/>
+        <entry field="true" id="53" symbol="&lt;globals/ArduinoView/&lt;&gt;_windCorrectedElement&gt;"/>
+        <entry id="34" method="true" symbol="&lt;globals/ArduinoBLEDelegate/&lt;&gt;contains&gt;"/>
+        <entry field="true" id="76" symbol="AppName"/>
+        <entry field="true" id="35" symbol="profileManager"/>
+        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry field="true" id="46" symbol="&lt;globals/ArduinoDelegate/&lt;&gt;_view&gt;"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8389081" method="true" symbol="onBack"/>
+        <entry field="true" id="65" symbol="readPending"/>
+        <entry field="true" id="8390283" symbol="windSpeed"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8391340" symbol="descriptors"/>
+        <entry id="8391259" method="true" symbol="onCharacteristicRead"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="12" object="true" symbol="DataManager"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="8391258" method="true" symbol="onConnectedStateChanged"/>
+        <entry field="true" id="33" symbol="&lt;globals/Lesson1App/&lt;&gt;queue&gt;"/>
+        <entry id="30" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry field="true" id="44" symbol="&lt;globals/ArduinoDelegate/&lt;&gt;_inProgress&gt;"/>
+        <entry id="68" method="true" symbol="setService"/>
+        <entry field="true" id="64" symbol="paired"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="71" method="true" symbol="updateSpeedValue"/>
+        <entry field="true" id="19" symbol="_device"/>
+        <entry id="63" method="true" symbol="handleCRead"/>
+        <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
+        <entry field="true" id="22" symbol="&lt;globals/WindSensorProfile/&lt;&gt;_windSensorProfileDef&gt;"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="47" method="true" symbol="pauseRun"/>
+        <entry field="true" id="51" symbol="&lt;globals/ArduinoView/&lt;&gt;_currentDurationElement&gt;"/>
+        <entry id="8391244" method="true" symbol="isConnected"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="26" method="true" symbol="registerProfiles"/>
+        <entry field="true" id="61" symbol="deviceStatus"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="67" symbol="scanning"/>
+        <entry id="39" method="true" symbol="getSpeed"/>
+        <entry field="true" id="57" symbol="connected"/>
+        <entry id="49" method="true" symbol="startRun"/>
+        <entry field="true" id="58" symbol="curResult"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry field="true" id="18" symbol="&lt;globals/WindSensorProfile/&lt;&gt;_bleDelegate&gt;"/>
+        <entry field="true" id="74" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry field="true" id="45" symbol="&lt;globals/ArduinoDelegate/&lt;&gt;_timer&gt;"/>
+        <entry field="true" id="52" symbol="&lt;globals/ArduinoView/&lt;&gt;_currentPaceElement&gt;"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8391334" symbol="uuid"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="13" object="true" symbol="Lesson1App"/>
+        <entry field="true" id="37" symbol="view"/>
+        <entry field="true" id="55" symbol="&lt;globals/ArduinoView/&lt;&gt;_windspeed&gt;"/>
+        <entry field="true" id="8388892" symbol="name"/>
+        <entry field="true" id="24" symbol="&lt;globals/WindSensorProfile/&lt;&gt;_windSpeedOffset&gt;"/>
+        <entry id="72" method="true" symbol="updateWindCorrectedValue"/>
+        <entry id="73" method="true" symbol="updateWindDirectionValue"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="11" object="true" symbol="ArduinoView"/>
+        <entry field="true" id="56" symbol="arduinoService"/>
+        <entry id="8391341" symbol="characteristics"/>
+        <entry id="25" method="true" symbol="getWindSpeed"/>
+        <entry field="true" id="17" symbol="WIND_SENSOR_SERVICE"/>
+        <entry id="66" method="true" symbol="resetConnection"/>
+        <entry field="true" id="59" symbol="device"/>
+        <entry field="true" id="16" symbol="WIND_SENSOR_DATA"/>
+        <entry field="true" id="21" symbol="&lt;globals/WindSensorProfile/&lt;&gt;_profileManagerInfo&gt;"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="29" module="true" symbol="Layouts"/>
+        <entry id="10" object="true" symbol="ArduinoDelegate"/>
+        <entry field="true" id="40" symbol="&lt;globals/DataManager/&lt;&gt;windSpeed&gt;"/>
+        <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8391945" method="true" symbol="getView"/>
+        <entry field="true" id="48" symbol="session"/>
+        <entry id="8389078" method="true" symbol="onNextPage"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="32" symbol="&lt;globals/Lesson1App/&lt;&gt;profileManager&gt;"/>
+        <entry field="true" id="31" symbol="&lt;globals/Lesson1App/&lt;&gt;_view&gt;"/>
+        <entry id="50" method="true" symbol="updateDurationValue"/>
+        <entry id="14" object="true" symbol="WindSensorProfile"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268436091" name="desc" stackId="1" startPc="268436065"/>
+        <entry arg="true" endPc="268436091" name="status" stackId="2" startPc="268436065"/>
+        <entry arg="true" endPc="268436091" name="value" stackId="3" startPc="268436065"/>
+        <entry arg="true" endPc="268436180" name="iter" stackId="1" startPc="268436092"/>
+        <entry arg="true" endPc="268436180" name="obj" stackId="2" startPc="268436092"/>
+        <entry endPc="268436177" name="uuid" stackId="3" startPc="268436116"/>
+        <entry arg="true" endPc="268436283" name="device" stackId="1" startPc="268436181"/>
+        <entry arg="true" endPc="268436283" name="state" stackId="2" startPc="268436181"/>
+        <entry arg="true" endPc="268436345" name="pm" stackId="1" startPc="268436284"/>
+        <entry arg="true" endPc="268436345" name="topView" stackId="2" startPc="268436284"/>
+        <entry arg="true" endPc="268436565" name="scanResults" stackId="1" startPc="268436346"/>
+        <entry endPc="268436564" name="result" stackId="2" startPc="268436391"/>
+        <entry arg="true" endPc="268437298" name="elapsed" stackId="1" startPc="268437172"/>
+        <entry endPc="268437297" name="minutes" stackId="2" startPc="268437176"/>
+        <entry endPc="268437297" name="seconds" stackId="3" startPc="268437176"/>
+        <entry endPc="268437297" name="secondsFormatted" stackId="4" startPc="268437176"/>
+        <entry endPc="268437297" name="formattedValue" stackId="5" startPc="268437176"/>
+        <entry arg="true" endPc="268437545" name="runSpeed" stackId="1" startPc="268437299"/>
+        <entry arg="true" endPc="268437545" name="windSpeed" stackId="2" startPc="268437299"/>
+        <entry endPc="268437544" name="formattedValue" stackId="3" startPc="268437303"/>
+        <entry endPc="268437508" name="pace" stackId="4" startPc="268437341"/>
+        <entry endPc="268437508" name="minutes" stackId="5" startPc="268437341"/>
+        <entry endPc="268437508" name="seconds" stackId="6" startPc="268437341"/>
+        <entry endPc="268437508" name="secondsFormatted" stackId="7" startPc="268437341"/>
+        <entry arg="true" endPc="268437796" name="doClear" stackId="1" startPc="268437546"/>
+        <entry arg="true" endPc="268438076" name="dc" stackId="1" startPc="268437797"/>
+        <entry endPc="268438075" name="runSpeed" stackId="2" startPc="268437801"/>
+        <entry arg="true" endPc="268438327" name="speed" stackId="1" startPc="268438135"/>
+        <entry endPc="268438326" name="formattedValue" stackId="2" startPc="268438139"/>
+        <entry endPc="268438290" name="pace" stackId="3" startPc="268438177"/>
+        <entry endPc="268438290" name="minutes" stackId="4" startPc="268438177"/>
+        <entry endPc="268438290" name="seconds" stackId="5" startPc="268438177"/>
+        <entry endPc="268438290" name="secondsFormatted" stackId="6" startPc="268438177"/>
+        <entry arg="true" endPc="268438493" name="characteristic" stackId="1" startPc="268438328"/>
+        <entry arg="true" endPc="268438493" name="status" stackId="2" startPc="268438328"/>
+        <entry arg="true" endPc="268438493" name="value" stackId="3" startPc="268438328"/>
+        <entry arg="true" endPc="268438538" name="pm" stackId="1" startPc="268438494"/>
+        <entry arg="true" endPc="268438766" name="runSpeed" stackId="1" startPc="268438539"/>
+        <entry arg="true" endPc="268438766" name="windSpeed" stackId="2" startPc="268438539"/>
+        <entry endPc="268438765" name="label" stackId="3" startPc="268438543"/>
+        <entry endPc="268438765" name="color" stackId="4" startPc="268438543"/>
+        <entry arg="true" endPc="268439044" name="dc" stackId="1" startPc="268438767"/>
+        <entry endPc="268438939" name="characteristic" stackId="2" startPc="268438847"/>
+        <entry endPc="268439043" name="runSpeed" stackId="3" startPc="268438771"/>
+        <entry arg="true" endPc="268439551" name="dc" stackId="1" startPc="268439045"/>
+        <entry endPc="268439551" name="rez_cmp_local_text_wind_title" stackId="2" startPc="268439057"/>
+        <entry endPc="268439551" name="rez_cmp_local_text_current_pace" stackId="3" startPc="268439057"/>
+        <entry endPc="268439551" name="rez_cmp_local_text_wind_corrected_pace" stackId="4" startPc="268439057"/>
+        <entry endPc="268439551" name="rez_cmp_local_text_elapsed_time" stackId="5" startPc="268439057"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/WindType" offset="206" parentId="globals" symbolId="WindType" type="class"/>
+        <dataEntry label="globals/WindSensorProfile" offset="253" parentId="globals" symbolId="WindSensorProfile" type="class"/>
+        <dataEntry label="globals/Rez" offset="412" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Lesson1App" offset="491" parentId="globals" symbolId="Lesson1App" type="class"/>
+        <dataEntry label="globals/ArduinoBLEDelegate" offset="594" parentId="globals" symbolId="ArduinoBLEDelegate" type="class"/>
+        <dataEntry label="globals/DataManager" offset="697" parentId="globals" symbolId="DataManager" type="class"/>
+        <dataEntry label="globals/ArduinoDelegate" offset="768" parentId="globals" symbolId="ArduinoDelegate" type="class"/>
+        <dataEntry label="globals/ArduinoView" offset="927" parentId="globals" symbolId="ArduinoView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1206" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1245" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1284" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="1315" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1346" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="1385" parentId="Rez" symbolId="JsonData" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="WindType">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="WindType">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435678" name="&lt;init&gt;" parent="WindSensorProfile" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435689" name="isConnected" parent="WindSensorProfile" startPc="268435679">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435716" name="registerProfiles" parent="WindSensorProfile" startPc="268435690">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435727" name="getWindSpeed" parent="WindSensorProfile" startPc="268435717">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="WindSensorProfile">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435753" name="getApp" startPc="268435728">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435777" name="&lt;init&gt;" parent="Rez" startPc="268435754">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435796" name="&lt;init&gt;" parent="Lesson1App" startPc="268435778">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435799" name="onStart" parent="Lesson1App" startPc="268435797">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436010" name="getInitialView" parent="Lesson1App" startPc="268435800">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436031" name="initialize" parent="Lesson1App" startPc="268436011">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436042" name="getView" parent="Lesson1App" startPc="268436032">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436045" name="onStop" parent="Lesson1App" startPc="268436043">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436064" name="&lt;init&gt;" parent="ArduinoBLEDelegate" startPc="268436046">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436091" name="onCharacteristicRead" parent="ArduinoBLEDelegate" startPc="268436065">
+            <param id="desc"/>
+            <param id="status"/>
+            <param id="value"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436180" name="&lt;globals/ArduinoBLEDelegate/&lt;&gt;contains&gt;" parent="ArduinoBLEDelegate" startPc="268436092">
+            <param id="iter"/>
+            <param id="obj"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436283" name="onConnectedStateChanged" parent="ArduinoBLEDelegate" startPc="268436181">
+            <param id="device"/>
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436345" name="initialize" parent="ArduinoBLEDelegate" startPc="268436284">
+            <param id="pm"/>
+            <param id="topView"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436565" name="onScanResults" parent="ArduinoBLEDelegate" startPc="268436346">
+            <param id="scanResults"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="DataManager">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436589" name="getSpeed" parent="DataManager" startPc="268436566">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="DataManager">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436618" name="getElapsedTime" parent="DataManager" startPc="268436590">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436656" name="&lt;init&gt;" parent="ArduinoDelegate" startPc="268436619">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436704" name="updateDurationValue" parent="ArduinoDelegate" startPc="268436657">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436770" name="onSelect" parent="ArduinoDelegate" startPc="268436705">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436835" name="onBack" parent="ArduinoDelegate" startPc="268436771">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436931" name="startRun" parent="ArduinoDelegate" startPc="268436836">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437030" name="initialize" parent="ArduinoDelegate" startPc="268436932">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onUpdate" parent="ArduinoDelegate">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437078" name="onNextPage" parent="ArduinoDelegate" startPc="268437031">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437117" name="pauseRun" parent="ArduinoDelegate" startPc="268437079">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437152" name="getView" startPc="268437118">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437171" name="&lt;init&gt;" parent="ArduinoView" startPc="268437153">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437298" name="updateElapsedValue" parent="ArduinoView" startPc="268437172">
+            <param id="elapsed"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437545" name="updateWindCorrectedValue" parent="ArduinoView" startPc="268437299">
+            <param id="runSpeed"/>
+            <param id="windSpeed"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437796" name="resetConnection" parent="ArduinoView" startPc="268437546">
+            <param id="doClear"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="ArduinoView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="ArduinoView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438076" name="onLayout" parent="ArduinoView" startPc="268437797">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438134" name="setService" parent="ArduinoView" startPc="268438077">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438327" name="updateSpeedValue" parent="ArduinoView" startPc="268438135">
+            <param id="speed"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438493" name="handleCRead" parent="ArduinoView" startPc="268438328">
+            <param id="characteristic"/>
+            <param id="status"/>
+            <param id="value"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438538" name="initialize" parent="ArduinoView" startPc="268438494">
+            <param id="pm"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438766" name="updateWindDirectionValue" parent="ArduinoView" startPc="268438539">
+            <param id="runSpeed"/>
+            <param id="windSpeed"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439044" name="onUpdate" parent="ArduinoView" startPc="268438767">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439551" name="MainLayout" parent="Layouts" startPc="268439045">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

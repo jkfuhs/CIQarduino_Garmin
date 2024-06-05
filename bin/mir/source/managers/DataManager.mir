@@ -1,50 +1,47 @@
-[ @file = "D:\School\Garmin\tutorials\Lesson1\source\managers\DataManager.mc"; @line = 1; ]
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\managers\DataManager.mc"; @line = 1; ]
 import Toybox.Application;
-[ @file = "D:\School\Garmin\tutorials\Lesson1\source\managers\DataManager.mc"; @line = 2; ]
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\managers\DataManager.mc"; @line = 2; ]
 import Toybox.Lang;
-[ @file = "D:\School\Garmin\tutorials\Lesson1\source\managers\DataManager.mc"; @line = 3; ]
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\managers\DataManager.mc"; @line = 3; ]
 import Toybox.Activity;
-[ @file = "D:\School\Garmin\tutorials\Lesson1\source\managers\DataManager.mc"; @line = 5; ]
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\managers\DataManager.mc"; @line = 5; ]
 class DataManager{
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\managers\DataManager.mc"; @line = 5; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\managers\DataManager.mc"; @line = 5; ]
     <init> {
     }
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\managers\DataManager.mc"; @line = 5; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\managers\DataManager.mc"; @line = 5; ]
     static
     <init> {
     }
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\managers\DataManager.mc"; @line = 6; ]
-    static
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\managers\DataManager.mc"; @line = 6; @position = 16; ]
+    private
+    var windSpeed = 8;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\managers\DataManager.mc"; @line = 8; ]
+    public
     function getSpeed() {
-D_School_Garmin_tutorials_Lesson1_source_managers_DataManager_mc_6_31_start:
-[ "D:\School\Garmin\tutorials\Lesson1\source\managers\DataManager.mc" 9 8 ]
-        %tmp.1 = 10;
-        ret %tmp.1;
-D_School_Garmin_tutorials_Lesson1_source_managers_DataManager_mc_6_31_stop:
+D_School_Garmin_ble_CIQarduino_garmin_source_managers_DataManager_mc_8_31_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\managers\DataManager.mc" 9 8 ]
+        %tmp.1 = getm $.Toybox.Activity;
+        %tmp.2 = getv function %tmp.1 :getActivityInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = getv %tmp.3 :currentSpeed;
+        ret %tmp.4;
+D_School_Garmin_ble_CIQarduino_garmin_source_managers_DataManager_mc_8_31_stop:
     }
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\managers\DataManager.mc"; @line = 12; ]
-    static
-    function getWindSpeed() {
-D_School_Garmin_tutorials_Lesson1_source_managers_DataManager_mc_12_35_start:
-[ "D:\School\Garmin\tutorials\Lesson1\source\managers\DataManager.mc" 14 8 ]
-        %tmp.1 = 6;
-        ret %tmp.1;
-D_School_Garmin_tutorials_Lesson1_source_managers_DataManager_mc_12_35_stop:
-    }
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\managers\DataManager.mc"; @line = 17; ]
-    static
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\managers\DataManager.mc"; @line = 23; ]
+    public
     function getElapsedTime() {
-D_School_Garmin_tutorials_Lesson1_source_managers_DataManager_mc_17_37_start:
-[ "D:\School\Garmin\tutorials\Lesson1\source\managers\DataManager.mc" 18 8 ]
+D_School_Garmin_ble_CIQarduino_garmin_source_managers_DataManager_mc_23_37_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\managers\DataManager.mc" 24 8 ]
         %tmp.1 = getm $.Toybox.Application;
         %tmp.2 = getv %tmp.1 :Properties;
         %tmp.3 = getv function %tmp.2 :getValue;
         %tmp.4 = "elapsedTime";
         %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
         ret %tmp.5;
-D_School_Garmin_tutorials_Lesson1_source_managers_DataManager_mc_17_37_stop:
+D_School_Garmin_ble_CIQarduino_garmin_source_managers_DataManager_mc_23_37_stop:
     }
 }
-[ @file = "D:\School\Garmin\tutorials\Lesson1\source\managers\DataManager.mc"; @line = 1; ]
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\managers\DataManager.mc"; @line = 1; ]
 <init> {
 }

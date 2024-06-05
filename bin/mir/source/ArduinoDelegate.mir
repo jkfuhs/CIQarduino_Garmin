@@ -1,0 +1,219 @@
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 3; ]
+import Toybox.System;
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 4; ]
+import Toybox.Timer;
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 5; ]
+using Toybox.System as :Sys;
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 7; ]
+class ArduinoDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 7; ]
+    <init> {
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 16 16 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :getView;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        putv self :_view %tmp.3;
+    }
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 9; @position = 16; ]
+    private
+    var _inProgress = false;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 11; @position = 16; ]
+    private
+    var _currentSpeed;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 12; @position = 16; ]
+    private
+    var _currentWind;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 13; @position = 16; ]
+    private
+    var _currentDuration = 0;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 15; @position = 16; ]
+    private
+    var _timer;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 16; @position = 16; ]
+    private
+    var _view;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 17; @position = 8; ]
+    var session;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 19; ]
+    function initialize() as Void {
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_19_26_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 20 8 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 21 8 ]
+        %tmp.5 = getv ? :ActivityRecording;
+        %tmp.6 = getv function %tmp.5 :createSession;
+        %tmp.7 = newd 2;
+        %tmp.9 = const :name;
+        %tmp.10 = "WindRun";
+        %tmp.11 = dup %tmp.7;
+        %tmp.12 = aputv %tmp.11 %tmp.9 %tmp.10;
+        %tmp.14 = const :sport;
+        %tmp.16 = getv ? :Activity;
+        %tmp.17 = getv %tmp.16 :SPORT_RUNNING;
+        %tmp.18 = dup %tmp.12;
+        %tmp.19 = aputv %tmp.18 %tmp.14 %tmp.17;
+        %tmp.20 = invoke %tmp.5 %tmp.6(%tmp.19);
+        putv self :session %tmp.20;
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 25 8 ]
+        %tmp.21 = getm $.Toybox.System;
+        %tmp.22 = getv function %tmp.21 :println;
+        %tmp.23 = "Delegate init complete";
+        invoke %tmp.21 %tmp.22(%tmp.23);
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_19_26_stop:
+    }
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 28; ]
+    function onSelect() as Boolean {
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_28_35_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 29 8 ]
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_29_8_if_stmt:
+        %tmp.2 = getv ? :_inProgress;
+        %tmp.3 = false;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_29_8_if_false;
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_29_8_if_true:
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_29_34_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 30 12 ]
+        %tmp.5 = true;
+        putv self :_inProgress %tmp.5;
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 31 12 ]
+        %tmp.6 = self;
+        %tmp.7 = getv function %tmp.6 :startRun;
+        invoke %tmp.6 %tmp.7();
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_29_34_stop:
+        goto @D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_29_8_if_end;
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_29_8_if_false:
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_33_13_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 34 12 ]
+        %tmp.8 = false;
+        putv self :_inProgress %tmp.8;
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 35 12 ]
+        %tmp.9 = self;
+        %tmp.10 = getv function %tmp.9 :pauseRun;
+        invoke %tmp.9 %tmp.10();
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_33_13_stop:
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_29_8_if_end:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 38 8 ]
+        %tmp.11 = true;
+        ret %tmp.11;
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_28_35_stop:
+    }
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 41; ]
+    function onUpdate() {
+    }
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 46; ]
+    function onBack() {
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_47_4_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 48 8 ]
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_48_8_if_stmt:
+        %tmp.2 = getv ? :_inProgress;
+        bf %tmp.2 @D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_48_8_if_false;
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_48_8_if_true:
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_48_25_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 49 12 ]
+        %tmp.4 = getv ? :session;
+        %tmp.5 = getv function %tmp.4 :addLap;
+        invoke %tmp.4 %tmp.5();
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_48_25_stop:
+        goto @D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_48_8_if_end;
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_48_8_if_false:
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_50_15_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 51 12 ]
+        %tmp.7 = getv ? :session;
+        %tmp.8 = getv function %tmp.7 :discard;
+        invoke %tmp.7 %tmp.8();
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 52 12 ]
+        %tmp.9 = self;
+        %tmp.10 = getv function %tmp.9 :exit;
+        invoke %tmp.9 %tmp.10();
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_50_15_stop:
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_48_8_if_end:
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_47_4_stop:
+    }
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 56; ]
+    function onNextPage() {
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_57_4_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 58 8 ]
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_58_8_if_stmt:
+        %tmp.2 = getv ? :_inProgress;
+        %tmp.3 = not %tmp.2;
+        bf %tmp.3 @D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_58_8_if_end;
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_58_8_if_true:
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_58_26_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 59 12 ]
+        %tmp.5 = getv ? :session;
+        %tmp.6 = getv function %tmp.5 :save;
+        invoke %tmp.5 %tmp.6();
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 60 12 ]
+        %tmp.7 = self;
+        %tmp.8 = getv function %tmp.7 :exit;
+        invoke %tmp.7 %tmp.8();
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_58_26_stop:
+        goto @D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_58_8_if_end;
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_58_8_if_end:
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_57_4_stop:
+    }
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 65; ]
+    function startRun() {
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_65_24_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 66 8 ]
+        %tmp.3 = getm $.Toybox.Timer;
+        %tmp.4 = getv function ? %tmp.3 :Timer;
+        %tmp.1 = newc %tmp.4 ();
+        putv self :_timer %tmp.1;
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 67 8 ]
+        %tmp.6 = getv ? :_timer;
+        %tmp.7 = getv function %tmp.6 :start;
+        %tmp.8 = self;
+        %tmp.9 = getv function %tmp.8 :method;
+        %tmp.11 = const :updateDurationValue;
+        %tmp.12 = invoke %tmp.8 %tmp.9(%tmp.11);
+        %tmp.13 = 1000;
+        %tmp.14 = true;
+        invoke %tmp.6 %tmp.7(%tmp.12, %tmp.13, %tmp.14);
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 68 8 ]
+        %tmp.16 = getv ? :session;
+        %tmp.17 = getv function %tmp.16 :start;
+        invoke %tmp.16 %tmp.17();
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_65_24_stop:
+    }
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 71; ]
+    function pauseRun() {
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_71_24_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 72 8 ]
+        %tmp.2 = getv ? :_timer;
+        %tmp.3 = getv function %tmp.2 :stop;
+        invoke %tmp.2 %tmp.3();
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 73 8 ]
+        %tmp.5 = getv ? :session;
+        %tmp.6 = getv function %tmp.5 :stop;
+        invoke %tmp.5 %tmp.6();
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_71_24_stop:
+    }
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 76; ]
+    function updateDurationValue() {
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_76_35_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 77 8 ]
+        %tmp.3 = getv ? :_currentDuration;
+        %tmp.4 = add %tmp.3 1;
+        putv self :_currentDuration dup %tmp.4;
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc" 78 8 ]
+        %tmp.6 = getv ? :_view;
+        %tmp.7 = getv function %tmp.6 :updateElapsedValue;
+        %tmp.9 = getv ? :_currentDuration;
+        invoke %tmp.6 %tmp.7(%tmp.9);
+D_School_Garmin_ble_CIQarduino_garmin_source_ArduinoDelegate_mc_76_35_stop:
+    }
+}
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\ArduinoDelegate.mc"; @line = 1; ]
+<init> {
+}

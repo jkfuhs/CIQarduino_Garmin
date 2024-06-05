@@ -1,97 +1,102 @@
-[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 1; ]
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 1; ]
 import Toybox.Lang;
-[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 2; ]
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 2; ]
 import Toybox.WatchUi;
-[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 3; ]
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 3; ]
 import Toybox.System;
-[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 4; ]
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 4; ]
 import Toybox.Timer;
-[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 6; ]
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 5; ]
+using Toybox.System as :Sys;
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 7; ]
 class Lesson1Delegate extends WatchUi.BehaviorDelegate{
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 6; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 7; ]
     <init> {
-[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc" 15 16 ]
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 16 16 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :getView;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         putv self :_view %tmp.3;
     }
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 6; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 7; ]
     static
     <init> {
     }
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 8; @position = 16; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 9; @position = 16; ]
     private
     var _inProgress = false;
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 10; @position = 16; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 11; @position = 16; ]
     private
     var _currentSpeed;
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 11; @position = 16; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 12; @position = 16; ]
     private
     var _currentWind;
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 12; @position = 16; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 13; @position = 16; ]
     private
     var _currentDuration = 0;
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 14; @position = 16; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 15; @position = 16; ]
     private
     var _timer;
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 15; @position = 16; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 16; @position = 16; ]
     private
     var _view;
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 17; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 18; ]
     function initialize() as Void {
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_17_26_start:
-[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc" 18 8 ]
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_18_26_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 19 8 ]
         %tmp.2 = getv ? :BehaviorDelegate;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_17_26_stop:
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_18_26_stop:
     }
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 21; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 22; ]
     function onSelect() as Boolean {
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_21_35_start:
-[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc" 22 8 ]
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_22_8_if_stmt:
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_22_35_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 23 8 ]
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_23_8_if_stmt:
         %tmp.2 = getv ? :_inProgress;
         %tmp.3 = false;
         %tmp.4 = eq %tmp.2 %tmp.3;
-        bf %tmp.4 @D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_22_8_if_false;
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_22_8_if_true:
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_22_34_start:
-[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc" 23 12 ]
+        bf %tmp.4 @D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_23_8_if_false;
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_23_8_if_true:
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_23_34_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 24 12 ]
         %tmp.5 = true;
         putv self :_inProgress %tmp.5;
-[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc" 24 12 ]
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 25 12 ]
         %tmp.6 = self;
         %tmp.7 = getv function %tmp.6 :startRun;
         invoke %tmp.6 %tmp.7();
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_22_34_stop:
-        goto @D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_22_8_if_end;
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_22_8_if_false:
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_26_13_start:
-[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc" 27 12 ]
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_23_34_stop:
+        goto @D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_23_8_if_end;
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_23_8_if_false:
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_27_13_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 28 12 ]
         %tmp.8 = false;
         putv self :_inProgress %tmp.8;
-[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc" 28 12 ]
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 29 12 ]
         %tmp.9 = self;
         %tmp.10 = getv function %tmp.9 :pauseRun;
         invoke %tmp.9 %tmp.10();
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_26_13_stop:
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_22_8_if_end:
-[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc" 31 8 ]
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_27_13_stop:
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_23_8_if_end:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 32 8 ]
         %tmp.11 = true;
         ret %tmp.11;
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_21_35_stop:
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_22_35_stop:
     }
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 35; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 35; ]
+    function onUpdate() {
+    }
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 42; ]
     function startRun() {
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_35_24_start:
-[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc" 42 8 ]
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_42_24_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 49 8 ]
         %tmp.3 = getm $.Toybox.Timer;
         %tmp.4 = getv function ? %tmp.3 :Timer;
         %tmp.1 = newc %tmp.4 ();
         putv self :_timer %tmp.1;
-[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc" 43 8 ]
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 50 8 ]
         %tmp.6 = getv ? :_timer;
         %tmp.7 = getv function %tmp.6 :start;
         %tmp.8 = self;
@@ -101,32 +106,63 @@ D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_35_24_start:
         %tmp.13 = 1000;
         %tmp.14 = true;
         invoke %tmp.6 %tmp.7(%tmp.12, %tmp.13, %tmp.14);
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_35_24_stop:
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_42_24_stop:
     }
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 46; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 53; ]
     function pauseRun() {
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_46_24_start:
-[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc" 47 8 ]
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_53_24_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 54 8 ]
         %tmp.2 = getv ? :_timer;
         %tmp.3 = getv function %tmp.2 :stop;
         invoke %tmp.2 %tmp.3();
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_46_24_stop:
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_53_24_stop:
     }
-    [ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 50; ]
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 57; ]
     function updateDurationValue() {
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_50_35_start:
-[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc" 51 8 ]
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_57_35_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 58 8 ]
         %tmp.3 = getv ? :_currentDuration;
         %tmp.4 = add %tmp.3 1;
         putv self :_currentDuration dup %tmp.4;
-[ "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc" 52 8 ]
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 59 8 ]
         %tmp.6 = getv ? :_view;
         %tmp.7 = getv function %tmp.6 :updateElapsedValue;
         %tmp.9 = getv ? :_currentDuration;
         invoke %tmp.6 %tmp.7(%tmp.9);
-D_School_Garmin_tutorials_Lesson1_source_Lesson1Delegate_mc_50_35_stop:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 60 8 ]
+        %tmp.10 = getm $.Toybox.System;
+        %tmp.11 = getv function %tmp.10 :println;
+        %tmp.12 = "Updating Speeds";
+        invoke %tmp.10 %tmp.11(%tmp.12);
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 61 8 ]
+        %tmp.14 = getv ? :DataManager;
+        %tmp.15 = getv function %tmp.14 :getSpeed;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        putv self :_currentSpeed %tmp.16;
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 62 8 ]
+        %tmp.18 = getv ? :DataManager;
+        %tmp.19 = getv function %tmp.18 :getWindSpeed;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        putv self :_currentWind %tmp.20;
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 63 8 ]
+        %tmp.22 = getv ? :_view;
+        %tmp.23 = getv function %tmp.22 :updateSpeedValue;
+        %tmp.25 = getv ? :_currentSpeed;
+        invoke %tmp.22 %tmp.23(%tmp.25);
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 64 8 ]
+        %tmp.27 = getv ? :_view;
+        %tmp.28 = getv function %tmp.27 :updateWindDirectionValue;
+        %tmp.30 = getv ? :_currentWind;
+        invoke %tmp.27 %tmp.28(%tmp.30);
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc" 65 8 ]
+        %tmp.32 = getv ? :_view;
+        %tmp.33 = getv function %tmp.32 :updateWindCorrectedValue;
+        %tmp.35 = getv ? :_currentSpeed;
+        %tmp.37 = getv ? :_currentWind;
+        invoke %tmp.32 %tmp.33(%tmp.35, %tmp.37);
+D_School_Garmin_ble_CIQarduino_garmin_source_Lesson1Delegate_mc_57_35_stop:
     }
 }
-[ @file = "D:\School\Garmin\tutorials\Lesson1\source\Lesson1Delegate.mc"; @line = 1; ]
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\Lesson1Delegate.mc"; @line = 1; ]
 <init> {
 }

@@ -1,0 +1,104 @@
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 1; ]
+using Toybox.System as :Sys;
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 3; ]
+using Toybox.BluetoothLowEnergy as :Ble;
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 5; ]
+class WindSensorProfile{
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 5; ]
+    <init> {
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc" 18 17 ]
+        %tmp.1 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.2 = getv function %tmp.1 :stringToUuid;
+        %tmp.3 = "0x0000181a00001000800000805f9b34fbL";
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        putv self :WIND_SENSOR_SERVICE %tmp.4;
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc" 19 17 ]
+        %tmp.5 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.6 = getv function %tmp.5 :stringToUuid;
+        %tmp.7 = "0x0000181a00001000800000805f9b34fbL";
+        %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
+        putv self :WIND_SENSOR_DATA %tmp.8;
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc" 31 18 ]
+        %tmp.9 = newd 2;
+        %tmp.11 = const :uuid;
+        %tmp.13 = getv ? :WIND_SENSOR_SERVICE;
+        %tmp.14 = dup %tmp.9;
+        %tmp.15 = aputv %tmp.14 %tmp.11 %tmp.13;
+        %tmp.17 = const :characteristics;
+        %tmp.18 = newa 1;
+        %tmp.19 = newd 2;
+        %tmp.21 = const :uuid;
+        %tmp.23 = getv ? :WIND_SENSOR_DATA;
+        %tmp.24 = dup %tmp.19;
+        %tmp.25 = aputv %tmp.24 %tmp.21 %tmp.23;
+        %tmp.27 = const :descriptors;
+        %tmp.28 = newa 1;
+        %tmp.29 = getm $.Toybox.BluetoothLowEnergy;
+        %tmp.30 = getv function %tmp.29 :cccdUuid;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        %tmp.32 = dup %tmp.28;
+        %tmp.33 = aputv %tmp.32 0 %tmp.31;
+        %tmp.34 = dup %tmp.25;
+        %tmp.35 = aputv %tmp.34 %tmp.27 %tmp.33;
+        %tmp.36 = dup %tmp.18;
+        %tmp.37 = aputv %tmp.36 0 %tmp.35;
+        %tmp.38 = dup %tmp.15;
+        %tmp.39 = aputv %tmp.38 %tmp.17 %tmp.37;
+        putv self :_windSensorProfileDef %tmp.39;
+    }
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 7; @position = 8; ]
+    var uuid1 = 0x0000000000001000L;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 8; @position = 8; ]
+    var uuid2 = 0x800000805f9b34fbL;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 9; @position = 16; ]
+    private
+    var _bleDelegate;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 11; @position = 8; ]
+    var _device;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 12; @position = 16; ]
+    private
+    var _profileManagerInfo;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 13; @position = 16; ]
+    private
+    var _windSpeed = 0l;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 15; @position = 16; ]
+    private
+    var _windSpeedOffset = 2;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 16; @position = 16; ]
+    private
+    var _isConnected = false;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 18; @position = 17; ]
+    public
+    const WIND_SENSOR_SERVICE;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 19; @position = 17; ]
+    public
+    const WIND_SENSOR_DATA;
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 21; ]
+    function isConnected() {
+D_School_Garmin_ble_CIQarduino_garmin_source_BleProfile_mc_22_4_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc" 23 8 ]
+        %tmp.2 = getv ? :_isConnected;
+        ret %tmp.2;
+D_School_Garmin_ble_CIQarduino_garmin_source_BleProfile_mc_22_4_stop:
+    }
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 26; ]
+    function getWindSpeed() {
+D_School_Garmin_ble_CIQarduino_garmin_source_BleProfile_mc_27_4_start:
+[ "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc" 28 8 ]
+        %tmp.2 = getv ? :_windSpeed;
+        ret %tmp.2;
+D_School_Garmin_ble_CIQarduino_garmin_source_BleProfile_mc_27_4_stop:
+    }
+    [ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 31; @position = 18; ]
+    private
+    const _windSensorProfileDef;
+}
+[ @file = "D:\School\Garmin\ble\CIQarduino\garmin\source\BleProfile.mc"; @line = 1; ]
+<init> {
+}
