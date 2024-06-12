@@ -49,7 +49,6 @@ class ArduinoDelegate extends WatchUi.BehaviorDelegate {
             session.addLap();
         } else {
             session.discard();
-            exit();
         }
     }
 
@@ -57,7 +56,6 @@ class ArduinoDelegate extends WatchUi.BehaviorDelegate {
     {
         if (!_inProgress) {
             session.save();
-            exit();
         }
     }
 

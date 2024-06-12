@@ -23,6 +23,7 @@ class ArduinoView extends WatchUi.View {
     var paired;
     var deviceStatus;
     var arduinoService = null;
+    var windThreshold = 0.06;
     var profileManager;
 
     var timer;
@@ -73,7 +74,6 @@ class ArduinoView extends WatchUi.View {
             var characteristic = (arduinoService!=null) ? arduinoService.getCharacteristic(profileManager.WIND_SENSOR_DATA) : null;
             // var cccd = characteristic.getDescriptor(Ble.cccdUuid());
             // Sys.println("cccd: " + cccd);
-            Sys.println("Requesting read");
             characteristic.requestRead();
             // Sys.println("cccd: " + cccd);
             readPending = true;
@@ -89,14 +89,10 @@ class ArduinoView extends WatchUi.View {
 
     function handleCRead(characteristic, status, value)
     {
-        Sys.println("value read: " + value);
         if (status == Ble.STATUS_READ_FAIL)
         {
-            Sys.println("READ FAILED");
         } else {
             windSpeed = value.decodeNumber(NUMBER_FORMAT_UINT16, {:endianness =>Lang.ENDIAN_LITTLE}) / 100.0;
-            Sys.print("Little endian: ");
-            Sys.println(windSpeed);
         }
         readPending = false;
     }
@@ -110,7 +106,7 @@ class ArduinoView extends WatchUi.View {
     function updateWindDirectionValue(runSpeed, windSpeed) as Void {
         var label, color;
 
-        Sys.println("Run speed = " + DataManager.getSpeed());
+        // Sys.println("Run speed = " + DataManager.getSpeed());
 
         if (scanning)
         {
@@ -121,19 +117,22 @@ class ArduinoView extends WatchUi.View {
             label = "No Wind";
             color = Graphics.COLOR_BLUE;
         }
-        else if (windSpeed > 0.6)
+        else if (windSpeed > windThreshold)
         {
             label = "Head Wind";
             color = Graphics.COLOR_RED;
         }
-        else if (windSpeed < 0.6)
+        else if (windSpeed < windThreshold)
         {
             label = "Tail Wind";
             color = Graphics.COLOR_GREEN;
         }
 
-        _windTitleElement.setText(label);
-        _windTitleElement.setColor(color);
+        if (label != null && color != null)
+        {
+            _windTitleElement.setText(label);
+            _windTitleElement.setColor(color);
+        }
 
         WatchUi.requestUpdate();
     }
@@ -151,11 +150,8 @@ class ArduinoView extends WatchUi.View {
         }
         else {
             var pace = 1000 / speed;
-            // Sys.println("Pace = " + pace.toString());
             var minutes = (pace / 60).toNumber();
-            // Sys.println("Made it past minutes");
             var seconds = pace.toNumber() % 60;
-            // Sys.println("Made it past seconds");
 
             var secondsFormatted = seconds > 9 ? seconds.toString() : "0" + seconds.toString();
 
@@ -168,6 +164,17 @@ class ArduinoView extends WatchUi.View {
     }
 
     function updateWindCorrectedValue(runSpeed, windSpeed) as Void {
+
+        /*
+        Formula: 
+        Headwind:
+        Wv in (5, 15) mps : Pace += 0.109 * (Wv)^2
+
+        Wv in >15 mps     : Pace += 0.00034 * (Wv)^3
+
+        Tailwind:
+        Pace -= 0.655 * (Wv)^2
+        */
         var formattedValue;
 
         if (runSpeed == null)
@@ -178,14 +185,25 @@ class ArduinoView extends WatchUi.View {
             formattedValue = "--:-- WCP";
         }
         else {
-            
-            
-            if (windSpeed > 0.6) {
-                runSpeed += 0.18; 
+
+            windSpeed = windSpeed - runSpeed;
+
+            if (windSpeed > 5)
+            {
+                if (windSpeed < 15)
+                {
+                    runSpeed += 0.109 * windSpeed * windSPeed;
+                } else
+                {
+                    runSpeed += 0.00034 * windSpeed * windSpeed * windSpeed;
+                }
             }
-            else if (windSpeed < 0.6) {
-                runSpeed -= 0.09;
+            else 
+            {
+                runSpeed -= 0.655 * windSpeed * windSpeed;
             }
+
+            
             var pace = 1000 / runSpeed;
             var minutes = (pace / 60).toNumber();
             var seconds = pace.toNumber() % 60;
