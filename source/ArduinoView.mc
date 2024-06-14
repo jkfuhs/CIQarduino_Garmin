@@ -113,16 +113,16 @@ class ArduinoView extends WatchUi.View {
             label = "Scanning...";
             color = Graphics.COLOR_DK_GREEN;
         }
-        else if ((runSpeed - windSpeed).abs() < 0.1) {
+        else if ((runSpeed - windSpeed).abs() < 5) {
             label = "No Wind";
             color = Graphics.COLOR_BLUE;
         }
-        else if (windSpeed > windThreshold)
+        else if (windSpeed - runSpeed > 5)
         {
             label = "Head Wind";
             color = Graphics.COLOR_RED;
         }
-        else if (windSpeed < windThreshold)
+        else if (runSpeed - windSpeed > 5)
         {
             label = "Tail Wind";
             color = Graphics.COLOR_GREEN;
@@ -168,12 +168,9 @@ class ArduinoView extends WatchUi.View {
         /*
         Formula: 
         Headwind:
-        Wv in (5, 15) mps : Pace += 0.109 * (Wv)^2
 
-        Wv in >15 mps     : Pace += 0.00034 * (Wv)^3
 
         Tailwind:
-        Pace -= 0.655 * (Wv)^2
         */
         var formattedValue;
 
@@ -188,21 +185,16 @@ class ArduinoView extends WatchUi.View {
 
             windSpeed = windSpeed - runSpeed;
 
-            if (windSpeed > 5)
+            if (windSpeed < 15)
             {
-                if (windSpeed < 15)
+                if ((windSpeed) > 5)
                 {
-                    runSpeed += 0.109 * windSpeed * windSPeed;
-                } else
+                    runSpeed *= 0.846 + 0.0240 * windSpeed * windSpeed;
+                } else if (windSpeed < -5)
                 {
-                    runSpeed += 0.00034 * windSpeed * windSpeed * windSpeed;
+                    runSpeed *= 0.881 - 0.144 * windSpeed * windSpeed;
                 }
             }
-            else 
-            {
-                runSpeed -= 0.655 * windSpeed * windSpeed;
-            }
-
             
             var pace = 1000 / runSpeed;
             var minutes = (pace / 60).toNumber();
